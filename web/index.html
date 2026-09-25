@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Anamnea · Quizzes do ciclo básico</title>
+  <meta name="description" content="120 questões de Anatomia, Bioquímica, Embriologia, Fisiologia, Genética, Histologia, Semiologia e Saúde Coletiva, corrigidas na hora com explicação.">
+  <meta name="theme-color" content="#1a3a9e">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Nunito:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script type="module" src="js/paginas/inicio.js"></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-topo">
+    <div class="conteiner">
+      <a class="marca marca-clara" href="./" aria-label="Anamnea, página inicial">
+        <span class="marca-simbolo" aria-hidden="true">A</span>
+        <span>Anamnea</span>
+      </a>
+      <nav aria-label="Conta">
+        <ul data-visitante>
+          <li><a class="btn btn-sm btn-contorno-claro" href="entrar.html">Entrar</a></li>
+          <li><a class="btn btn-sm btn-claro" href="cadastro.html">Criar conta</a></li>
+        </ul>
+        <ul data-logado hidden>
+          <li><a class="btn btn-sm btn-claro" href="quizzes.html">Ir para as questões</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="conteiner">
+        <div class="hero-texto">
+          <h1 id="titulo-hero">120 questões do ciclo básico, corrigidas na hora.</h1>
+          <p>Oito disciplinas, de Anatomia a Saúde Coletiva. Você responde, vê a alternativa certa e a explicação antes de passar para a próxima.</p>
+          <div class="hero-acoes" data-visitante>
+            <a class="btn btn-lg btn-claro" href="cadastro.html">
+              Criar conta
+              <span class="btn-disco" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </a>
+            <a class="btn btn-lg btn-contorno-claro" href="entrar.html">Já tenho conta</a>
+          </div>
+          <div class="hero-acoes" data-logado hidden>
+            <a class="btn btn-lg btn-claro" href="quizzes.html">
+              Continuar estudando
+              <span class="btn-disco" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero-amostra">
+          <div class="card">
+            <span class="chip chip-info">Anatomia · Nível 1</span>
+            <p class="enunciado-amostra">Uma criança com cardiopatia congênita tem dificuldade na passagem de sangue do ventrículo direito para os pulmões. Qual valva fica entre o ventrículo direito e a artéria pulmonar?</p>
+            <ol>
+              <li><span class="pill">Valva aórtica</span></li>
+              <li><span class="pill certa">Valva pulmonar <span class="sr-only">(alternativa correta)</span></span></li>
+              <li><span class="pill">Valva mitral</span></li>
+            </ol>
+            <p class="explicacao-amostra">A valva pulmonar fica entre o ventrículo direito e a artéria pulmonar. A aórtica fica entre o ventrículo esquerdo e a aorta.</p>
+          </div>
+          <img class="hero-vento" src="img/vento/joinha.webp" alt="" width="595" height="873">
+          <figcaption class="sr-only">Exemplo de questão já corrigida, com a explicação logo abaixo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-como-funciona">
+      <div class="conteiner">
+        <h2 id="titulo-como-funciona">Como funciona</h2>
+        <ol class="passos">
+          <li>
+            <div>
+              <h3>Escolha um quiz</h3>
+              <p>São 16 quizzes em dois níveis, com 7 ou 8 questões cada. Dá para filtrar pela disciplina da semana.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Responda uma por vez</h3>
+              <p>A primeira resposta é a que vale. Se não souber, marque “Não sei”: conta como erro, e você lê a explicação sem chutar.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Some XP</h3>
+              <p>10 XP por acerto e 20 de bônus quem acerta todas. Só a primeira conclusão do dia em cada quiz rende XP.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="secao secao-alternada" aria-labelledby="titulo-disciplinas">
+      <div class="conteiner">
+        <h2 id="titulo-disciplinas">As oito disciplinas</h2>
+        <p class="secao-intro">Dois quizzes por disciplina: o nível 1 cobre os conceitos, o nível 2 põe esses conceitos em casos clínicos.</p>
+        <ul class="grade-disciplinas">
+          <li><strong>Anatomia</strong><span>Coração e grandes vasos; abdome</span></li>
+          <li><strong>Bioquímica</strong><span>Glicose, insulina e glucagon; ácido-base</span></li>
+          <li><strong>Embriologia</strong><span>Gastrulação; coração e circulação fetal</span></li>
+          <li><strong>Fisiologia</strong><span>Pressão arterial; respiração</span></li>
+          <li><strong>Genética</strong><span>Herança mendeliana; doenças genéticas</span></li>
+          <li><strong>Histologia</strong><span>Epitélio e conjuntivo; cardiovascular</span></li>
+          <li><strong>Semiologia</strong><span>Queixa principal; exame do tórax</span></li>
+          <li><strong>Saúde Coletiva</strong><span>SUS e ESF; epidemiologia</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-arquitetura">
+      <div class="conteiner">
+        <h2 id="titulo-arquitetura">Três linguagens, três serviços</h2>
+        <p class="secao-intro">Cada parte do sistema roda separada e conversa com as outras por HTTP e JSON.</p>
+        <div class="arquitetura">
+          <article class="card">
+            <h3><span class="chip chip-info">C++</span> Autenticação</h3>
+            <p>Cadastro, login, sessão e recuperação de senha. Senha guardada com PBKDF2-SHA256; cinco erros seguidos bloqueiam o login por cinco minutos.</p>
+          </article>
+          <article class="card">
+            <h3><span class="chip chip-info">Python</span> Quizzes</h3>
+            <p>O banco de 120 questões, a correção de cada resposta, o XP e o ranking. Só a biblioteca padrão: <code>http.server</code> e <code>sqlite3</code>.</p>
+          </article>
+          <article class="card">
+            <h3><span class="chip chip-info">HTML, CSS, JS</span> Interface</h3>
+            <p>Sem framework e sem etapa de build. Segue o design system da Anamnea e funciona do celular ao desktop.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="conteiner">
+      <div>
+        <a class="marca marca-clara" href="./">
+          <span class="marca-simbolo" aria-hidden="true">A</span>
+          <span>Anamnea</span>
+        </a>
+        <p>Challenge FIAP 2026. As questões vêm do banco da Anamnea.</p>
+      </div>
+      <section aria-labelledby="titulo-equipe">
+        <h2 id="titulo-equipe">Equipe</h2>
+        <ul>
+          <li>Artur Figueiredo Vianna</li>
+          <li>Cassiano Rocha Assumpção</li>
+          <li>Pedro Perraro John</li>
+        </ul>
+      </section>
+      <section aria-labelledby="titulo-codigo">
+        <h2 id="titulo-codigo">Código</h2>
+        <ul>
+          <li><a href="https://github.com/arturviannaa/fiap-challange">github.com/arturviannaa/fiap-challange</a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
