@@ -186,29 +186,30 @@
   background: var(--on-blue);
   color: var(--blue-600);
 }
-/* Depois de conferir: verde a certa, vermelho a escolhida errada, o resto apagado */
-.alternativa[data-estado] {
+/* Depois de conferir: verde a certa, vermelho a errada escolhida, o resto apagado.
+   O prefixo .alternativas vence o :has(input:checked) acima, que continua marcado. */
+.alternativas .alternativa[data-estado] {
   cursor: default;
 }
-.alternativa[data-estado="certa"] {
+.alternativas .alternativa[data-estado="certa"] {
   background: var(--ok);
   border-color: var(--ok);
   color: var(--white);
 }
-.alternativa[data-estado="errada"] {
+.alternativas .alternativa[data-estado="errada"] {
   background: var(--err);
   border-color: var(--err);
   color: var(--white);
 }
-.alternativa[data-estado="certa"] .letra,
-.alternativa[data-estado="errada"] .letra {
+.alternativas .alternativa[data-estado="certa"] .letra,
+.alternativas .alternativa[data-estado="errada"] .letra {
   background: var(--white);
   color: var(--ink);
 }
-.alternativa[data-estado="neutra"] {
+.alternativas .alternativa[data-estado="neutra"] {
   opacity: 0.6;
 }
-.alternativa[data-estado="neutra"]:hover {
+.alternativas .alternativa[data-estado="neutra"]:hover {
   border-color: var(--line);
 }
 .alternativa .marcador {
