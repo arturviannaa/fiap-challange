@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Entrar · Anamnea</title>
+  <meta name="description" content="Entre na sua conta para responder os quizzes do ciclo básico.">
+  <meta name="theme-color" content="#1a3a9e">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Nunito:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script type="module" src="js/paginas/entrar.js"></script>
+</head>
+<body>
+  <div class="conta">
+    <aside class="conta-lado">
+      <a class="marca marca-clara" href="./" aria-label="Anamnea, página inicial">
+        <span class="marca-simbolo" aria-hidden="true">A</span>
+        <span>Anamnea</span>
+      </a>
+      <div class="conta-lado-texto">
+        <h2>Seu XP e seu histórico continuam onde você parou.</h2>
+        <p>Entre para retomar os quizzes e ver seu lugar no ranking da turma.</p>
+      </div>
+      <img class="conta-lado-texto" src="img/vento/acenando.webp" alt="" width="640" height="875">
+    </aside>
+
+    <main class="conta-principal">
+      <div class="conta-formulario">
+        <h1>Entrar</h1>
+        <p>Use o e-mail e a senha do cadastro.</p>
+
+        <form id="formulario" novalidate>
+          <p id="aviso" role="alert" hidden></p>
+
+          <div class="campo-grupo">
+            <label class="rotulo" for="email">E-mail</label>
+            <input class="campo" id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          </div>
+
+          <div class="campo-grupo">
+            <label class="rotulo" for="senha">Senha</label>
+            <div class="campo-senha">
+              <input class="campo" id="senha" name="senha" type="password" autocomplete="current-password" required>
+              <button class="campo-senha-botao" type="button" aria-controls="senha" aria-pressed="false" aria-label="Mostrar senha"></button>
+            </div>
+            <p class="linha-entre"><a href="recuperar-senha.html">Esqueci a senha</a></p>
+          </div>
+
+          <button class="btn btn-lg btn-acao btn-bloco" type="submit">Entrar</button>
+        </form>
+
+        <p class="conta-rodape">Ainda não tem conta? <a href="cadastro.html">Criar conta</a></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

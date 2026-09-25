@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Criar conta · Anamnea</title>
+  <meta name="description" content="Crie sua conta para responder os 16 quizzes do ciclo básico e somar XP.">
+  <meta name="theme-color" content="#1a3a9e">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Nunito:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script type="module" src="js/paginas/cadastro.js"></script>
+</head>
+<body>
+  <div class="conta">
+    <aside class="conta-lado">
+      <a class="marca marca-clara" href="./" aria-label="Anamnea, página inicial">
+        <span class="marca-simbolo" aria-hidden="true">A</span>
+        <span>Anamnea</span>
+      </a>
+      <div class="conta-lado-texto">
+        <h2>16 quizzes, 120 questões, oito disciplinas.</h2>
+        <p>Cada resposta vem com a explicação. Cada acerto vale 10 XP.</p>
+      </div>
+      <img class="conta-lado-texto" src="img/vento/comemorando.webp" alt="" width="667" height="854">
+    </aside>
+
+    <main class="conta-principal">
+      <div class="conta-formulario">
+        <h1>Criar conta</h1>
+        <p>Leva menos de um minuto.</p>
+
+        <form id="formulario" novalidate>
+          <p id="aviso" role="alert" hidden></p>
+
+          <div class="campo-grupo">
+            <label class="rotulo" for="nome">Nome</label>
+            <input class="campo" id="nome" name="nome" type="text" autocomplete="name" maxlength="80" required>
+          </div>
+
+          <div class="campo-grupo">
+            <label class="rotulo" for="email">E-mail</label>
+            <input class="campo" id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          </div>
+
+          <div class="campo-grupo">
+            <label class="rotulo" for="senha">Senha</label>
+            <div class="campo-senha">
+              <input class="campo" id="senha" name="senha" type="password" autocomplete="new-password" aria-describedby="dica-senha" required>
+              <button class="campo-senha-botao" type="button" aria-controls="senha" aria-pressed="false" aria-label="Mostrar senha"></button>
+            </div>
+            <p class="dica" id="dica-senha">Pelo menos 8 caracteres, com letras e números.</p>
+          </div>
+
+          <button class="btn btn-lg btn-acao btn-bloco" type="submit">Criar conta</button>
+        </form>
+
+        <p class="conta-rodape">Já tem conta? <a href="entrar.html">Entrar</a></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

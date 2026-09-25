@@ -1,0 +1,22 @@
+# Sobreposicao de producao (VPS). Uso:
+#   docker compose -f docker-compose.yml -f deploy/docker-compose.prod.yml up -d --build
+# As portas ficam presas ao 127.0.0.1: quem fala com a internet e o nginx do host.
+services:
+  auth:
+    restart: unless-stopped
+    environment:
+      ORIGENS: https://challenge.pervian.tech
+      MODO_DEMO: "1"
+    ports: !override
+      - "127.0.0.1:8092:8092"
+
+  quiz:
+    restart: unless-stopped
+    environment:
+      ORIGENS: https://challenge.pervian.tech
+    ports: !override
+      - "127.0.0.1:8093:8093"
+
+  # Em producao o site estatico e servido direto pelo nginx do host.
+  web:
+    profiles: ["local"]

@@ -1,0 +1,455 @@
+/* Componentes do design system (DESIGN_SYSTEM secao 5 e 10.2). */
+
+/* ---------- Marca ---------- */
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.125rem;
+  letter-spacing: -0.01em;
+}
+.marca-simbolo {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: var(--blue-600);
+  color: var(--white);
+  font-size: 1.125rem;
+}
+.marca-clara {
+  color: var(--white);
+}
+.marca-clara .marca-simbolo {
+  background: var(--white);
+  color: var(--blue-600);
+}
+
+/* ---------- Botoes ----------
+   Todo botao afunda ao ser pressionado: a sombra 'press' e solida, sem blur. */
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0 var(--s-6);
+  border-radius: var(--r-btn);
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out,
+    background-color var(--t-padrao) var(--entrada);
+}
+.btn-lg {
+  height: 56px;
+  padding: 0 var(--s-8);
+  font-size: 1.125rem;
+}
+.btn-sm {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 0.875rem;
+}
+/* No toque, 40px fica abaixo do alvo minimo; o botao cresce sem mudar de tipo. */
+@media (pointer: coarse) {
+  .btn-sm {
+    height: 44px;
+  }
+}
+.btn-bloco {
+  width: 100%;
+}
+.btn svg {
+  flex-shrink: 0;
+}
+
+.btn-acao {
+  background: var(--action);
+  color: var(--on-blue);
+  box-shadow: var(--press) var(--action-deep);
+}
+.btn-acao:hover {
+  background: var(--action-deep);
+}
+/* Branco sobre o azul chapado do topo */
+.btn-claro {
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: var(--press) var(--frame);
+}
+.btn-claro:hover {
+  background: var(--paper);
+}
+.btn-ok {
+  background: var(--ok);
+  color: var(--white);
+  box-shadow: var(--press) var(--ok-deep);
+}
+.btn-perigo {
+  background: var(--err);
+  color: var(--white);
+  box-shadow: var(--press) var(--err-deep);
+}
+.btn-aviso {
+  background: var(--warn);
+  color: var(--ink);
+  box-shadow: var(--press) var(--warn-deep);
+}
+.btn-acao:active,
+.btn-claro:active,
+.btn-ok:active,
+.btn-perigo:active,
+.btn-aviso:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.btn-contorno {
+  border: 2px solid var(--blue-600);
+  color: var(--blue-600);
+  background: transparent;
+}
+.btn-contorno:hover {
+  background: var(--surface);
+}
+.btn-contorno-claro {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: var(--white);
+  background: transparent;
+}
+.btn-contorno-claro:hover {
+  background: var(--glass-12);
+}
+.btn-texto {
+  color: var(--ink-soft);
+  padding: 0 var(--s-3);
+}
+.btn-texto:hover {
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+.btn[aria-busy="true"] {
+  cursor: wait;
+}
+
+/* Disco escuro embutido na ponta do CTA primario */
+.btn-disco {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: -12px;
+  border-radius: var(--r-chip);
+  background: var(--action-deep);
+  color: var(--on-blue);
+}
+.btn-claro .btn-disco {
+  background: var(--blue-100);
+  color: var(--ink);
+}
+
+/* ---------- Pill de escolha (mecanica do quiz) ----------
+   Vazada = nao selecionada. Azul = selecionada. Verde/vermelha = corrigida. */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 2px solid var(--line);
+  border-radius: var(--r-chip);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: background-color var(--t-padrao) var(--entrada), color var(--t-padrao) var(--entrada),
+    border-color var(--t-padrao) var(--entrada);
+}
+.pill:hover {
+  border-color: var(--blue-600);
+}
+.pill[aria-pressed="true"],
+.pill-on {
+  background: var(--blue-600);
+  border-color: var(--blue-600);
+  color: var(--on-blue);
+}
+
+/* ---------- Card ----------
+   Borda grossa e sombra solida de 4px: o card e fisico, como o botao. */
+.card {
+  border: 2px solid var(--frame);
+  border-radius: var(--r-card);
+  background: var(--card);
+  box-shadow: var(--press) var(--line);
+  padding: var(--s-6);
+}
+.card-link {
+  transition: transform 120ms ease-out, box-shadow 120ms ease-out, border-color 120ms ease-out;
+}
+.card-link:hover,
+.card-link:focus-within {
+  transform: translateY(-2px);
+  border-color: var(--blue-600);
+  box-shadow: 0 6px 0 0 var(--line);
+}
+.card[data-cor="ok"] {
+  border-color: var(--ok-deep);
+  box-shadow: var(--press) var(--ok-deep);
+}
+.card[data-cor="azul"] {
+  border-color: var(--blue-600);
+  box-shadow: var(--press) var(--blue-600);
+}
+
+/* ---------- Chip de metadado: so rotula, nao carrega estado ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: var(--s-1) var(--s-3);
+  border-radius: var(--r-chip);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.chip-info {
+  background: var(--blue-100);
+  color: var(--blue-900);
+}
+.chip-volt {
+  background: var(--volt);
+  color: var(--ink);
+}
+.chip-ok {
+  background: var(--ok-soft);
+  color: var(--ok-deep);
+}
+
+/* ---------- Formularios ---------- */
+.campo-grupo + .campo-grupo {
+  margin-top: var(--s-4);
+}
+.rotulo {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  color: var(--ink-soft);
+}
+.campo {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 0 var(--s-4);
+  border: 2px solid var(--frame);
+  border-radius: var(--r-btn);
+  background: var(--card);
+  color: var(--ink);
+  font-size: 1rem;
+  transition: border-color var(--t-padrao) var(--entrada);
+}
+.campo::placeholder {
+  color: var(--ink-soft);
+  opacity: 1;
+}
+.campo:hover {
+  border-color: var(--ink-soft);
+}
+.campo:focus {
+  border-color: var(--blue-600);
+  outline-offset: 1px;
+}
+.campo[aria-invalid="true"] {
+  border-color: var(--err);
+}
+.dica {
+  margin-top: 6px;
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+.campo-codigo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.4em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Campo de senha com o olho de revelar dentro da moldura */
+.campo-senha {
+  position: relative;
+}
+.campo-senha .campo {
+  padding-right: var(--s-12);
+}
+.campo-senha-botao {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  translate: 0 -50%;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r-btn);
+  color: var(--ink-soft);
+  transition: color var(--t-padrao) ease, background-color var(--t-padrao) ease;
+}
+.campo-senha-botao:hover {
+  color: var(--ink);
+  background: var(--surface);
+}
+
+/* ---------- Avisos ----------
+   Erro explica o que quebrou e como resolver, sem pedir desculpa. */
+.aviso {
+  padding: var(--s-3) var(--s-4);
+  border: 1px solid;
+  border-radius: var(--r-btn);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.aviso-erro {
+  border-color: var(--err);
+  background: var(--err-soft);
+  color: var(--err-deep);
+}
+.aviso-ok {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+  color: var(--ok-deep);
+}
+.aviso-info {
+  border-color: var(--blue-600);
+  background: var(--blue-100);
+  color: var(--blue-900);
+}
+.aviso a {
+  color: inherit;
+}
+
+/* ---------- Cabecalho de pagina interna ----------
+   Faixa azul chapada, sem gradiente e sem blob. */
+.capa {
+  padding: 40px var(--s-6);
+  border-radius: var(--r-panel);
+  background: var(--blue-900);
+  color: var(--on-blue);
+}
+.capa h1 {
+  margin-top: var(--s-3);
+  color: var(--white);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.capa p {
+  max-width: 65ch;
+  margin-top: var(--s-3);
+  font-size: 1.125rem;
+  color: var(--on-blue-soft);
+}
+.capa .rotulo-da-capa {
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--volt);
+}
+@media (min-width: 640px) {
+  .capa {
+    padding: 40px 40px;
+  }
+}
+
+/* ---------- Numero grande com rotulo pequeno ---------- */
+.tile {
+  display: flex;
+  flex-direction: column;
+  padding: var(--s-3) var(--s-4);
+  border: 2px solid var(--frame);
+  border-radius: var(--r-card);
+  background: var(--card);
+  box-shadow: 0 3px 0 0 var(--line);
+}
+.tile .valor {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.tile .rotulo-do-tile {
+  margin-top: var(--s-1);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+/* ---------- Barra de progresso: sempre com o numero ao lado ----------
+   E o <progress> nativo, sem a aparencia do sistema. */
+.trilho {
+  flex: 1;
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--r-chip);
+  background: var(--surface);
+  color: var(--blue-600);
+  appearance: none;
+}
+.trilho::-webkit-progress-bar {
+  border-radius: var(--r-chip);
+  background: var(--surface);
+}
+.trilho::-webkit-progress-value {
+  border-radius: var(--r-chip);
+  background: var(--blue-600);
+  transition: width 400ms var(--entrada);
+}
+.trilho::-moz-progress-bar {
+  border-radius: var(--r-chip);
+  background: var(--blue-600);
+}
+.trilho[data-cor="ok"]::-webkit-progress-value {
+  background: var(--ok);
+}
+.trilho[data-cor="ok"]::-moz-progress-bar {
+  background: var(--ok);
+}
+
+/* ---------- Grifo marca-texto ---------- */
+.grifo {
+  background: linear-gradient(to bottom, transparent 58%, var(--volt) 58%, var(--volt) 94%, transparent 94%);
+  padding-inline: 2px;
+}
+
+/* ---------- Icone em circulo ---------- */
+.icone-redondo {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r-chip);
+  background: var(--surface);
+  color: var(--ink);
+}

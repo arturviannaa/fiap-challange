@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Questões · Anamnea</title>
+  <meta name="description" content="Os 16 quizzes do ciclo básico, por disciplina e nível.">
+  <meta name="theme-color" content="#f6f8fc">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Nunito:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <script type="module" src="js/paginas/quizzes.js"></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="app-topo">
+    <div class="conteiner">
+      <a class="marca" href="./" aria-label="Anamnea, página inicial">
+        <span class="marca-simbolo" aria-hidden="true">A</span>
+        <span>Anamnea</span>
+      </a>
+      <nav class="app-nav" aria-label="Principal">
+        <ul>
+          <li><a href="quizzes.html" aria-current="page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg>
+            Questões</a></li>
+          <li><a href="desempenho.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.18C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.18C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            Desempenho</a></li>
+        </ul>
+      </nav>
+      <div class="app-conta">
+        <span class="nome-do-aluno" data-nome-do-aluno></span>
+        <button class="btn btn-sm btn-texto" type="button" data-sair>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+          Sair
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" class="pagina conteiner">
+    <section class="capa" aria-labelledby="titulo">
+      <p class="rotulo-da-capa" data-saudacao>Questões</p>
+      <h1 id="titulo">Escolha um quiz</h1>
+      <p>16 quizzes em oito disciplinas. A primeira resposta de cada questão é a que vale.</p>
+    </section>
+
+    <section class="filtros" aria-labelledby="titulo-filtros">
+      <h2 id="titulo-filtros" class="sr-only">Filtrar por disciplina</h2>
+      <div class="lista-de-pills" id="filtros" role="group" aria-labelledby="titulo-filtros"></div>
+    </section>
+
+    <p id="aviso" role="alert" hidden></p>
+    <p id="contagem" class="sr-only" aria-live="polite"></p>
+
+    <ul class="grade-quizzes" id="lista" aria-busy="true">
+      <li class="cartao-fantasma" aria-hidden="true"></li>
+      <li class="cartao-fantasma" aria-hidden="true"></li>
+      <li class="cartao-fantasma" aria-hidden="true"></li>
+    </ul>
+  </main>
+
+  <nav class="tab-bar" aria-label="Atalhos">
+    <ul>
+      <li><a href="quizzes.html" aria-current="page">
+        <span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>
+        <span>Questões</span></a></li>
+      <li><a href="desempenho.html">
+        <span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.18C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.18C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>
+        <span>Desempenho</span></a></li>
+    </ul>
+  </nav>
+</body>
+</html>

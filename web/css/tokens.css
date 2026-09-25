@@ -1,0 +1,77 @@
+/* =========================================================================
+   Tokens do design system da Anamnea (paleta cobalto, 23/09/2026).
+   Fonte: anamnea-app/src/styles/globals.css e docs/DESIGN_SYSTEM.md.
+   Nenhum hex fora deste arquivo: se falta um valor, ele nasce aqui.
+   ========================================================================= */
+
+:root {
+  /* Neutros frios da mesma familia do azul */
+  --ink: #0f1b33;
+  --ink-soft: #5b6780;
+  --paper: #f6f8fc;
+  --surface: #edf1f8;
+  --line: #dbe2ee;
+  --frame: #c9d3e5;
+  --card: #ffffff;
+  --white: #ffffff;
+
+  /* Marca: um matiz de azul so */
+  --blue-900: #1a3a9e;
+  --blue-600: #2459f5;
+  --blue-100: #e5ecfe;
+  --action: #2459f5;
+  --action-deep: #1a41c2;
+
+  /* Texto sobre azul profundo: branco puro causa halation */
+  --on-blue: #f7f9ff;
+  --on-blue-soft: #d3ddfb;
+
+  /* Accent unico: o amarelo da estrela de XP. Texto sobre ele e sempre --ink. */
+  --volt: #ffc93d;
+  --volt-deep: #d99b00;
+
+  /* Semanticas, separadas do accent */
+  --ok: #16805c;
+  --ok-deep: #106145;
+  --ok-soft: #e2f4eb;
+  --err: #c54155;
+  --err-deep: #9c2c40;
+  --err-soft: #fce9ee;
+  --warn: #e5a332;
+  --warn-deep: #80520e;
+  --warn-soft: #fff3d9;
+
+  /* Vidro branco sobre azul */
+  --glass-12: rgba(255, 255, 255, 0.12);
+  --glass-22: rgba(255, 255, 255, 0.22);
+  --glass-40: rgba(255, 255, 255, 0.4);
+
+  /* Raio: chip < botao < card < painel. O raio comunica profundidade. */
+  --r-chip: 999px;
+  --r-btn: 16px;
+  --r-card: 20px;
+  --r-panel: 28px;
+
+  /* Elevacao: tres niveis e so tres */
+  --press: 0 4px 0 0;
+  --shadow-lift: 0 12px 28px -12px rgba(14, 20, 32, 0.28);
+
+  /* Movimento */
+  --t-padrao: 180ms;
+  --entrada: cubic-bezier(0, 0, 0.2, 1);
+
+  /* Tipografia */
+  --font-sans: "Nunito", ui-rounded, system-ui, sans-serif;
+  --font-display: "Archivo", system-ui, sans-serif;
+
+  /* Grade de 4px */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-24: 96px;
+}
