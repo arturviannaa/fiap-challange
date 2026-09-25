@@ -8,7 +8,15 @@ Projeto do **Challenge FIAP 2026**. É o módulo de quizzes da [Anamnea](https:/
 | [`quiz/`](quiz) | **Python 3.12** | Banco de 120 questões, correção, XP e ranking |
 | [`web/`](web) | **HTML, CSS e JS puros** | A interface, seguindo o design system da Anamnea |
 
-**No ar:** https://challenge.pervian.tech
+## Links para teste
+
+| O quê | Link |
+|---|---|
+| **Site** | https://challenge.pervian.tech |
+| API de autenticação (C++) | https://challenge-auth.pervian.tech/saude |
+| API de quizzes (Python) | https://challenge-quiz.pervian.tech/quizzes |
+
+Para testar: crie uma conta em https://challenge.pervian.tech/cadastro.html, faça um quiz e veja o XP em **Desempenho**. Na recuperação de senha (https://challenge.pervian.tech/recuperar-senha.html) o código de 6 dígitos aparece na própria tela, porque o ambiente da entrega roda em modo demonstração, sem servidor de e-mail.
 
 ## Equipe
 
@@ -148,9 +156,9 @@ A VPS roda os dois serviços em containers presos ao `127.0.0.1`; o nginx do hos
 
 | Subdomínio | Aponta para |
 |---|---|
-| `challenge.pervian.tech` | `web/`, estático |
-| `challenge-auth.pervian.tech` | `auth`, porta 8092 |
-| `challenge-quiz.pervian.tech` | `quiz`, porta 8093 |
+| [`challenge.pervian.tech`](https://challenge.pervian.tech) | `web/`, estático |
+| [`challenge-auth.pervian.tech`](https://challenge-auth.pervian.tech/saude) | `auth`, porta 8092 |
+| [`challenge-quiz.pervian.tech`](https://challenge-quiz.pervian.tech/saude) | `quiz`, porta 8093 |
 
 ```bash
 ./deploy/deploy.sh   # atualiza /opt/fiap-challange, recompila e publica
