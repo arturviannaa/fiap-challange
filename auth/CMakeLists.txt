@@ -32,6 +32,7 @@ add_library(auth_core
   src/validacao.cpp
   src/banco.cpp
   src/contas.cpp
+  src/recuperacao.cpp
 )
 target_include_directories(auth_core PUBLIC src)
 target_link_libraries(auth_core PUBLIC OpenSSL::Crypto SQLite::SQLite3 nlohmann_json::nlohmann_json)
