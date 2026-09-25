@@ -130,4 +130,35 @@ void registrar_conta(httplib::Server& servidor, Contas& contas) {
     });
 }
 
+void registrar_recuperacao(httplib::Server& servidor, Recuperacao& recuperacao, bool modo_demo) {
+    servidor.Post("/conta/recuperar-senha", [&recuperacao, modo_demo](const httplib::Request& req,
+                                                                      httplib::Response& res) {
+        auto corpo = corpo_json(req, res);
+        if (!corpo) return;
+        tratar(res, [&] {
+            auto codigo = recuperacao.solicitar(campo(*corpo, "email"));
+            json resposta{{"mensagem",
+                           "Se houver uma conta com esse e-mail, enviamos um código de 6 dígitos. "
+                           "Ele vale por 15 minutos."}};
+            // Sem servidor de e-mail no ambiente da entrega, o codigo volta na
+            // resposta para a banca conseguir testar o fluxo inteiro.
+            if (modo_demo && codigo) {
+                resposta["codigo_demo"] = *codigo;
+            }
+            responder(res, 202, resposta);
+        });
+    });
+
+    servidor.Post("/conta/redefinir-senha", [&recuperacao](const httplib::Request& req,
+                                                           httplib::Response& res) {
+        auto corpo = corpo_json(req, res);
+        if (!corpo) return;
+        tratar(res, [&] {
+            recuperacao.redefinir(campo(*corpo, "email"), campo(*corpo, "codigo"),
+                                  campo(*corpo, "nova_senha"));
+            responder(res, 200, json{{"mensagem", "Senha alterada. Entre com a senha nova."}});
+        });
+    });
+}
+
 }  // namespace rotas

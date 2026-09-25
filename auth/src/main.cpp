@@ -7,6 +7,7 @@
 
 #include "banco.hpp"
 #include "contas.hpp"
+#include "recuperacao.hpp"
 #include "rotas.hpp"
 
 namespace {
@@ -33,6 +34,7 @@ int main() {
     const int porta = std::stoi(variavel("PORTA", "8092"));
     const auto origens = separar(
         variavel("ORIGENS", "http://localhost:8080,http://127.0.0.1:8080"), ',');
+    const bool modo_demo = variavel("MODO_DEMO", "0") == "1";
 
     std::filesystem::path pasta = std::filesystem::path(caminho_do_banco).parent_path();
     if (!pasta.empty()) std::filesystem::create_directories(pasta);
@@ -40,6 +42,8 @@ int main() {
     Banco banco(caminho_do_banco);
     Contas contas(banco);
     contas.preparar();
+    Recuperacao recuperacao(banco, contas);
+    recuperacao.preparar();
 
     httplib::Server servidor;
     servidor.set_payload_max_length(16 * 1024);
@@ -50,8 +54,10 @@ int main() {
     rotas::configurar_cors(servidor, origens);
     rotas::registrar_saude(servidor);
     rotas::registrar_conta(servidor, contas);
+    rotas::registrar_recuperacao(servidor, recuperacao, modo_demo);
 
-    std::cout << "auth ouvindo na porta " << porta << std::endl;
+    std::cout << "auth ouvindo na porta " << porta << (modo_demo ? " (modo demonstração)" : "")
+              << std::endl;
     if (!servidor.listen("0.0.0.0", porta)) {
         std::cerr << "Nao foi possivel abrir a porta " << porta << std::endl;
         return 1;
