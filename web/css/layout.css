@@ -1,0 +1,516 @@
+/* Estruturas de pagina: site publico, telas de conta e casca do app.
+   Mobile first: a regra base e a do celular; as media queries so acrescentam. */
+
+.conteiner {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: var(--s-4);
+}
+@media (min-width: 640px) {
+  .conteiner {
+    padding-inline: var(--s-6);
+  }
+}
+
+/* =========================================================================
+   Site publico
+   ========================================================================= */
+
+.site-topo {
+  background: var(--blue-900);
+}
+.site-topo .conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-4);
+  padding-block: var(--s-4);
+}
+.site-topo nav ul {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  list-style: none;
+  padding: 0;
+}
+
+.hero {
+  background: var(--blue-900);
+  color: var(--on-blue);
+  padding-block: var(--s-8) var(--s-16);
+  overflow: hidden;
+}
+.hero .conteiner {
+  display: grid;
+  gap: var(--s-12);
+  align-items: center;
+}
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+.hero-texto > p {
+  max-width: 52ch;
+  margin-top: var(--s-6);
+  font-size: 1.125rem;
+  color: var(--on-blue-soft);
+}
+.hero-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  margin-top: var(--s-8);
+}
+@media (max-width: 639px) {
+  .hero-acoes .btn-lg {
+    height: 48px;
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+}
+
+/* A questao de verdade que o hero mostra, em vez de descrever o produto */
+.hero-amostra {
+  position: relative;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 440px;
+}
+.hero-amostra .card {
+  position: relative;
+  z-index: 1;
+  box-shadow: var(--shadow-lift);
+  border-color: var(--card);
+  color: var(--ink);
+}
+.hero-amostra .enunciado-amostra {
+  margin-top: var(--s-3);
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.hero-amostra ol {
+  display: grid;
+  gap: var(--s-2);
+  margin-top: var(--s-4);
+  padding: 0;
+  list-style: none;
+}
+.hero-amostra .pill {
+  width: 100%;
+  cursor: default;
+}
+.hero-amostra .pill:hover {
+  border-color: var(--line);
+}
+.hero-amostra .pill.certa {
+  background: var(--ok);
+  border-color: var(--ok);
+  color: var(--white);
+}
+.hero-amostra .explicacao-amostra {
+  margin-top: var(--s-4);
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-btn);
+  background: var(--ok-soft);
+  color: var(--ok-deep);
+  font-size: 0.875rem;
+}
+.hero-vento {
+  position: absolute;
+  right: -24px;
+  bottom: -40px;
+  z-index: 2;
+  width: 104px;
+  height: auto;
+}
+@media (min-width: 960px) {
+  .hero {
+    padding-block: var(--s-12) var(--s-24);
+  }
+  .hero .conteiner {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  .hero-vento {
+    right: -64px;
+    width: 140px;
+  }
+}
+
+.secao {
+  padding-block: var(--s-16);
+}
+.secao h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+.secao-intro {
+  max-width: 60ch;
+  margin-top: var(--s-3);
+  font-size: 1.125rem;
+  color: var(--ink-soft);
+}
+.secao-alternada {
+  background: var(--surface);
+}
+
+.grade-disciplinas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--s-4);
+  margin-top: var(--s-8);
+  padding: 0;
+  list-style: none;
+}
+.grade-disciplinas li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  padding: var(--s-4) 20px;
+  border: 2px solid var(--frame);
+  border-radius: var(--r-card);
+  background: var(--card);
+}
+.grade-disciplinas strong {
+  font-size: 1.125rem;
+}
+.grade-disciplinas span {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+/* Passos do metodo: trilho numerado, nao cards soltos */
+.passos {
+  display: grid;
+  gap: var(--s-6);
+  margin-top: var(--s-8);
+  padding: 0;
+  list-style: none;
+  counter-reset: passo;
+}
+.passos li {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: var(--s-4);
+  counter-increment: passo;
+}
+.passos li::before {
+  content: counter(passo);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r-chip);
+  background: var(--blue-600);
+  color: var(--on-blue);
+  font-weight: 800;
+}
+.passos h3 {
+  font-size: 1.25rem;
+}
+.passos p {
+  margin-top: var(--s-1);
+  color: var(--ink-soft);
+}
+@media (min-width: 900px) {
+  .passos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Como o projeto foi montado: uma linha por servico */
+.arquitetura {
+  display: grid;
+  gap: var(--s-4);
+  margin-top: var(--s-8);
+}
+.arquitetura .card h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-size: 1.25rem;
+}
+.arquitetura .card p {
+  margin-top: var(--s-2);
+  color: var(--ink-soft);
+}
+.arquitetura code {
+  font-size: 0.875em;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--surface);
+}
+@media (min-width: 900px) {
+  .arquitetura {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.rodape {
+  padding-block: var(--s-12);
+  background: var(--blue-900);
+  color: var(--on-blue-soft);
+  font-size: 0.875rem;
+}
+.rodape .conteiner {
+  display: grid;
+  gap: var(--s-6);
+}
+.rodape p {
+  margin-top: var(--s-3);
+}
+.rodape h2 {
+  color: var(--white);
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+.rodape ul {
+  margin-top: var(--s-2);
+  padding: 0;
+  list-style: none;
+}
+.rodape a {
+  color: var(--white);
+}
+@media (min-width: 720px) {
+  .rodape .conteiner {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}
+
+/* =========================================================================
+   Telas de conta (entrar, cadastro, recuperar senha)
+   ========================================================================= */
+
+.conta {
+  display: grid;
+  min-height: 100svh;
+}
+.conta-lado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--s-8);
+  padding: var(--s-6) var(--s-4);
+  background: var(--blue-900);
+  color: var(--on-blue);
+}
+.conta-lado-texto {
+  display: none;
+}
+.conta-lado h2 {
+  color: var(--white);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+.conta-lado p {
+  max-width: 40ch;
+  margin-top: var(--s-3);
+  color: var(--on-blue-soft);
+  font-size: 1.125rem;
+}
+.conta-lado img {
+  width: 150px;
+  height: auto;
+}
+.conta-principal {
+  display: grid;
+  place-items: start center;
+  padding: var(--s-8) var(--s-4) var(--s-12);
+}
+.conta-formulario {
+  width: 100%;
+  max-width: 420px;
+}
+.conta-formulario h1 {
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+}
+.conta-formulario > p {
+  margin-top: var(--s-2);
+  color: var(--ink-soft);
+}
+.conta-formulario form {
+  margin-top: var(--s-8);
+}
+.conta-formulario .aviso {
+  margin-bottom: var(--s-4);
+}
+.conta-formulario .btn-bloco {
+  margin-top: var(--s-6);
+}
+.conta-rodape {
+  margin-top: var(--s-6);
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+.conta-rodape a {
+  font-weight: 800;
+}
+.linha-entre {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--s-2);
+  font-size: 0.875rem;
+}
+.linha-entre a {
+  font-weight: 700;
+}
+@media (min-width: 900px) {
+  .conta {
+    grid-template-columns: minmax(360px, 0.9fr) 1.1fr;
+  }
+  .conta-lado {
+    padding: var(--s-12);
+  }
+  .conta-lado-texto {
+    display: block;
+  }
+  .conta-principal {
+    place-items: center;
+    padding: var(--s-12);
+  }
+}
+
+/* =========================================================================
+   Casca do app (telas depois do login)
+   ========================================================================= */
+
+.app-topo {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.app-topo .conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-4);
+  min-height: 64px;
+}
+.app-nav {
+  display: none;
+}
+.app-nav ul {
+  display: flex;
+  gap: var(--s-1);
+  padding: 0;
+  list-style: none;
+}
+.app-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  padding: 0 var(--s-4);
+  border-radius: var(--r-btn);
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.app-nav a:hover {
+  background: var(--surface);
+}
+.app-nav a[aria-current="page"] {
+  background: var(--blue-600);
+  color: var(--on-blue);
+}
+.app-conta {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.app-conta .nome-do-aluno {
+  display: none;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+@media (min-width: 900px) {
+  .app-nav {
+    display: block;
+  }
+  .app-conta .nome-do-aluno {
+    display: inline;
+  }
+}
+
+/* Tab bar do celular: os mesmos destinos da nav, embaixo, ao alcance do polegar */
+.tab-bar {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 50;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tab-bar ul {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  padding: 0;
+  list-style: none;
+}
+.tab-bar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  min-height: 56px;
+  padding: var(--s-2) 0;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.tab-bar a > span:first-child {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 32px;
+  border-radius: var(--r-chip);
+  transition: background-color var(--t-padrao) var(--entrada);
+}
+.tab-bar a[aria-current="page"] {
+  color: var(--ink);
+}
+.tab-bar a[aria-current="page"] > span:first-child {
+  background: var(--volt);
+  color: var(--ink);
+}
+@media (min-width: 900px) {
+  .tab-bar {
+    display: none;
+  }
+}
+
+.pagina {
+  padding-block: var(--s-6) calc(var(--s-24) + env(safe-area-inset-bottom));
+}
+@media (min-width: 900px) {
+  .pagina {
+    padding-block: var(--s-8) var(--s-16);
+  }
+}
+
+.estado-vazio {
+  display: grid;
+  justify-items: center;
+  gap: var(--s-3);
+  padding: var(--s-12) var(--s-4);
+  border: 2px dashed var(--line);
+  border-radius: var(--r-card);
+  text-align: center;
+  color: var(--ink-soft);
+}
+.estado-vazio img {
+  width: 96px;
+  height: auto;
+}
