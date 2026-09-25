@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  auth:
+    name: Autenticação (C++)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependências
+        run: sudo apt-get update && sudo apt-get install -y libssl-dev libsqlite3-dev
+      - name: Compilar
+        run: cmake -S auth -B auth/build -DCMAKE_BUILD_TYPE=Release && cmake --build auth/build -j
+      - name: Testes
+        run: ctest --test-dir auth/build --output-on-failure
+
+  quiz:
+    name: Quizzes (Python)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Testes
+        working-directory: quiz
+        run: python -m unittest -v
+
+  web:
+    name: Interface (HTML, CSS e JS)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: HTML válido
+        run: npx --yes html-validate@9 "web/*.html"
+      - name: JS sem erro de sintaxe
+        run: for arquivo in $(find web/js -name '*.js'); do node --check "$arquivo"; done
