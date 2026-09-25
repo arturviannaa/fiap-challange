@@ -7,8 +7,16 @@ if (token()) location.replace(destinoDepoisDoLogin());
 
 const formulario = document.getElementById("formulario");
 const aviso = document.getElementById("aviso");
+const parametros = new URLSearchParams(location.search);
 
 ligarOlhos();
+
+// Vindo da recuperacao de senha: e-mail preenchido e a confirmacao na tela.
+if (parametros.get("email")) formulario.email.value = parametros.get("email");
+if (parametros.has("senha-trocada")) {
+  mostrarAviso(aviso, "Senha alterada. Entre com a senha nova.", "ok");
+  formulario.senha.focus();
+}
 
 formulario.addEventListener("submit", async (evento) => {
   evento.preventDefault();
