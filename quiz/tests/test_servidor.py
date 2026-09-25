@@ -82,6 +82,9 @@ class TestServidor(unittest.TestCase):
         self.assertEqual(self.pedir("GET", "/quizzes/999")[0], 404)
         self.assertEqual(self.pedir("GET", "/quizzes/abc")[0], 404)
 
+    def test_lista_publica_recusa_token_vencido(self):
+        self.assertEqual(self.pedir("GET", "/quizzes", token="vencido")[0], 401)
+
     def test_tentativa_exige_login(self):
         self.assertEqual(self.pedir("POST", "/quizzes/1/tentativas")[0], 401)
         self.assertEqual(self.pedir("POST", "/quizzes/1/tentativas", token="invalido")[0], 401)

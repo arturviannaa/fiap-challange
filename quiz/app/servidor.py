@@ -66,7 +66,17 @@ class Aplicacao:
     # ---------- leitura ----------
 
     def listar(self, disciplina: str | None, token: str) -> dict:
-        aluno = self.aluno(token, obrigatorio=False) if token else None
+        # A lista e publica, mas token vencido e erro: a tela precisa saber que a sessao caiu.
+        # Se o auth estiver fora do ar, a lista sai sem o aproveitamento do aluno.
+        aluno = None
+        if token:
+            try:
+                aluno = self.auth.aluno_do_token(token)
+            except ServicoDeAuthIndisponivel:
+                aluno = None
+            else:
+                if aluno is None:
+                    raise erro(401, "Sessão expirada. Entre de novo.")
         melhores = self.repositorio.resumo_do_usuario(aluno.id)["melhores"] if aluno else {}
         quizzes = []
         for quiz in self.catalogo.todos(disciplina):
