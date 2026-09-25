@@ -1,5 +1,6 @@
 import { auth } from "../api.js";
 import { conferirPreenchidos, esconderAviso, ligarOlhos, mostrarAviso, ocupar } from "../formulario.js";
+import { limparSessao } from "../sessao.js";
 
 const pedido = document.getElementById("pedido");
 const redefinicao = document.getElementById("redefinicao");
@@ -68,6 +69,8 @@ redefinicao.addEventListener("submit", async (evento) => {
         nova_senha: redefinicao.nova_senha.value,
       },
     });
+    // Trocar a senha derruba todas as sessoes no servidor; a deste navegador sai junto.
+    limparSessao();
     const email = encodeURIComponent(pedido.email.value.trim());
     location.assign(`entrar.html?email=${email}&senha-trocada`);
   } catch (erro) {
