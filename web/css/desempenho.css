@@ -1,0 +1,143 @@
+/* Tela de desempenho: numeros do aluno, historico e ranking. */
+
+.numeros {
+  margin-top: var(--s-6);
+}
+.grade-de-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-3);
+}
+/* dt vem antes do dd no HTML; na tela o numero aparece em cima */
+.grade-de-tiles .tile {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+.grade-de-tiles dd {
+  margin: 0;
+}
+@media (min-width: 720px) {
+  .grade-de-tiles {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cobertura {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-top: var(--s-4);
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--ink-soft);
+}
+
+.duas-colunas {
+  display: grid;
+  gap: var(--s-4);
+  margin-top: var(--s-6);
+}
+.duas-colunas h2 {
+  font-size: 1.25rem;
+}
+.duas-colunas .dica {
+  margin-top: var(--s-1);
+}
+@media (min-width: 960px) {
+  .duas-colunas {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Historico: tabela de verdade, com tres colunas que cabem em 360px */
+.tabela {
+  width: 100%;
+  margin-top: var(--s-4);
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+.tabela th {
+  padding: var(--s-2) var(--s-2) var(--s-2) 0;
+  border-bottom: 2px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-align: left;
+}
+.tabela td {
+  padding: var(--s-3) var(--s-2) var(--s-3) 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.tabela tr:last-child td {
+  border-bottom: 0;
+}
+.tabela .numero {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+.tabela td small {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.8125rem;
+}
+.tabela a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+.tabela a:hover {
+  text-decoration: underline;
+}
+
+/* Ranking */
+.ranking {
+  display: grid;
+  gap: var(--s-2);
+  margin-top: var(--s-4);
+  padding: 0;
+  list-style: none;
+}
+.ranking li {
+  display: grid;
+  grid-template-columns: 32px 1fr auto;
+  align-items: center;
+  gap: var(--s-3);
+  min-height: 48px;
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-btn);
+  background: var(--paper);
+}
+.ranking .posicao {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--r-chip);
+  background: var(--surface);
+  font-weight: 800;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+/* So o primeiro lugar ganha o volt: e o unico destaque da tela */
+.ranking li:first-child .posicao {
+  background: var(--volt);
+  color: var(--ink);
+}
+.ranking .nome {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.ranking .xp {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.ranking li[data-voce] {
+  background: var(--blue-100);
+  color: var(--blue-900);
+}
