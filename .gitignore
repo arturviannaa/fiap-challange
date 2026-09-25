@@ -1,0 +1,18 @@
+# C++
+auth/build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Bancos locais
+var/
+*.db
+*.db-shm
+*.db-wal
+
+# Editores e sistema
+.vscode/
+.idea/
+.DS_Store
