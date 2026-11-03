@@ -98,15 +98,78 @@ function desenharRanking(ranking) {
   );
 }
 
+function tabela(legenda, colunas, linhas) {
+  return el(
+    "table",
+    { class: "tabela" },
+    el("caption", { class: "sr-only" }, legenda),
+    el("thead", {}, el("tr", {}, colunas.map(([nome, numero]) => el("th", { scope: "col", class: numero ? "numero" : null }, nome)))),
+    el("tbody", {}, linhas),
+  );
+}
+
+function desenharDisciplinas({ disciplinas, recomendacao }) {
+  const alvo = $("disciplinas");
+  alvo.setAttribute("aria-busy", "false");
+  const proximo = recomendacao
+    ? el(
+        "a",
+        { class: "btn btn-acao", href: `quiz.html?id=${recomendacao.id}` },
+        recomendacao.motivo === "refazer" ? `Refazer ${recomendacao.titulo} (${recomendacao.melhor_aproveitamento}%)` : `Próximo: ${recomendacao.titulo}`,
+      )
+    : null;
+  if (!disciplinas.length) {
+    alvo.replaceChildren(vazio("Responda um quiz para ver seu aproveitamento por disciplina.", proximo));
+    return;
+  }
+  alvo.replaceChildren(
+    tabela(
+      "Aproveitamento por disciplina, da mais fraca para a mais forte",
+      [["Disciplina"], ["Acerto", true], ["Situação", true]],
+      disciplinas.map((d) =>
+        el("tr", {}, el("td", {}, d.disciplina), el("td", { class: "numero" }, `${d.aproveitamento}%`), el("td", { class: "numero" }, d.situacao)),
+      ),
+    ),
+    proximo,
+  );
+}
+
+function desenharTurma({ questoes, minimo_de_respostas }) {
+  const alvo = $("turma");
+  alvo.setAttribute("aria-busy", "false");
+  if (!questoes.length) {
+    alvo.replaceChildren(vazio(`Aparece quando uma questão tiver ${minimo_de_respostas} respostas.`));
+    return;
+  }
+  alvo.replaceChildren(
+    tabela(
+      "Questões com menor taxa de acerto da turma",
+      [["Questão"], ["Acerto", true]],
+      questoes.map((q) =>
+        el(
+          "tr",
+          {},
+          el("td", {}, q.enunciado, el("small", {}, `${q.titulo} · ${plural(q.respostas, "resposta", "respostas")}`)),
+          el("td", { class: "numero" }, `${q.taxa_de_acerto}%`),
+        ),
+      ),
+    ),
+  );
+}
+
 async function carregar() {
   try {
-    const [resumo, ranking] = await Promise.all([
+    const [resumo, ranking, analise, turma] = await Promise.all([
       quiz("/eu/resumo", { autenticado: true }),
       quiz("/ranking", { autenticado: true }),
+      quiz("/eu/analise", { autenticado: true }),
+      quiz("/analise/questoes"),
     ]);
     desenharNumeros(resumo);
     desenharHistorico(resumo.historico);
     desenharRanking(ranking.ranking);
+    desenharDisciplinas(analise);
+    desenharTurma(turma);
   } catch (erro) {
     mostrarAviso($("aviso"), erro.message);
   }

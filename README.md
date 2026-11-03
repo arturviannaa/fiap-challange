@@ -31,6 +31,7 @@ Para testar: crie uma conta em https://challenge.pervian.tech/cadastro.html, fa�
 3. Responde uma questão por vez e vê a correção e a explicação na hora. A primeira resposta é a que vale; “Não sei” conta como erro.
 4. Ao concluir, soma XP: **10 por acerto e 20 de bônus** para quem acerta todas. Só a primeira conclusão do dia em cada quiz rende XP, para ninguém subir no ranking refazendo o mesmo quiz.
 5. A tela de desempenho mostra XP, aproveitamento, histórico e o ranking da turma.
+6. A mesma tela mostra o aproveitamento por disciplina (dominada a partir de 70%, atenção de 50% a 69%, revisar abaixo de 50%), o próximo quiz recomendado e as questões que a turma mais erra.
 
 As questões vêm do banco de questões da Anamnea (16 quizzes, 120 questões): Anatomia, Bioquímica, Embriologia, Fisiologia, Genética, Histologia, Semiologia e Saúde Coletiva.
 
@@ -91,7 +92,7 @@ python -m http.server 8080 -d web
 
 ```bash
 ctest --test-dir auth/build --output-on-failure   # C++: 18 casos
-cd quiz && python -m unittest -v                  # Python: 24 casos
+cd quiz && python -m unittest -v                  # Python: 35 casos
 npx html-validate "web/*.html"                    # HTML
 ```
 
@@ -122,6 +123,8 @@ O GitHub Actions roda os três a cada pull request. As imagens Docker também ro
 | `POST` | `/tentativas/{id}/concluir` | — (Bearer) | `{acertos, total, xp_ganho, xp_total, primeira_do_dia}` |
 | `GET` | `/eu/resumo` | — (Bearer) | XP, aproveitamento e histórico |
 | `GET` | `/ranking` | — | as 10 pessoas com mais XP |
+| `GET` | `/eu/analise` | — (Bearer) | aproveitamento por disciplina e próximo quiz recomendado |
+| `GET` | `/analise/questoes` | — | as 5 questões com menor taxa de acerto da turma (mínimo 3 respostas) |
 
 Erros saem sempre como `{"erro": "mensagem para o usuário"}`, com o status HTTP certo (`401`, `404`, `409`, `422`, `429`).
 

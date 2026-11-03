@@ -145,3 +145,20 @@ class Repositorio:
             (limite,),
         )
         return [dict(linha) for linha in linhas]
+
+    def respondidas_por_quiz(self, usuario_id: str) -> dict[int, tuple[int, int]]:
+        linhas = self._executar(
+            """select t.quiz_id, sum(r.acertou) as acertos, count(*) as respondidas
+               from respostas r join tentativas t on t.id = r.tentativa_id
+               where t.usuario_id = ? group by t.quiz_id""",
+            (usuario_id,),
+        )
+        return {linha["quiz_id"]: (linha["acertos"], linha["respondidas"]) for linha in linhas}
+
+    def estatisticas_por_questao(self) -> list[dict]:
+        linhas = self._executar(
+            """select t.quiz_id, r.posicao, count(*) as respostas, sum(r.acertou) as acertos
+               from respostas r join tentativas t on t.id = r.tentativa_id
+               group by t.quiz_id, r.posicao"""
+        )
+        return [dict(linha) for linha in linhas]

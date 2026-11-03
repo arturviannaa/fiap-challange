@@ -141,3 +141,7 @@
   background: var(--blue-100);
   color: var(--blue-900);
 }
+
+#disciplinas > .btn {
+  margin-top: var(--s-4);
+}

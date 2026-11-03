@@ -31,7 +31,8 @@ class AuthFalso:
 class TestServidor(unittest.TestCase):
     def setUp(self):
         self.catalogo = Catalogo.do_arquivo()
-        app = Aplicacao(self.catalogo, Repositorio(":memory:"), AuthFalso())
+        self.auth = AuthFalso()
+        app = Aplicacao(self.catalogo, Repositorio(":memory:"), self.auth)
         self.servidor = criar_servidor(app, 0, [ORIGEM], host="127.0.0.1")
         self.base = f"http://127.0.0.1:{self.servidor.server_address[1]}"
         threading.Thread(target=self.servidor.serve_forever, daemon=True).start()
@@ -152,6 +153,61 @@ class TestServidor(unittest.TestCase):
         with self.assertRaises(urllib.error.HTTPError) as contexto:
             urllib.request.urlopen(pedido)
         self.assertEqual(contexto.exception.code, 400)
+
+    def test_content_length_invalido(self):
+        import http.client
+
+        conexao = http.client.HTTPConnection("127.0.0.1", self.servidor.server_address[1])
+        conexao.putrequest("POST", "/quizzes/1/tentativas")
+        conexao.putheader("Authorization", "Bearer token-artur")
+        conexao.putheader("Content-Length", "abc")
+        conexao.endheaders()
+        resposta = conexao.getresponse()
+        self.assertEqual(resposta.status, 400)
+        self.assertIn("Content-Length", json.loads(resposta.read())["erro"])
+        conexao.close()
+
+    def test_escolha_e_posicao_com_tipo_errado(self):
+        _, aberta, _ = self.pedir("POST", "/quizzes/1/tentativas", token="token-artur")
+        caminho = f"/tentativas/{aberta['tentativa_id']}/respostas"
+        for corpo in ({"posicao": "0", "escolha": 1}, {"posicao": 0, "escolha": "1"}, {"posicao": True, "escolha": 1}, {}):
+            status, resposta, _ = self.pedir("POST", caminho, corpo, "token-artur")
+            self.assertEqual(status, 422, corpo)
+            self.assertIn("erro", resposta)
+
+    def test_analise_do_aluno(self):
+        self.assertEqual(self.pedir("GET", "/eu/analise")[0], 401)
+        status, vazia, _ = self.pedir("GET", "/eu/analise", token="token-pedro")
+        self.assertEqual(status, 200)
+        self.assertEqual(vazia["disciplinas"], [])
+        self.assertEqual(vazia["recomendacao"]["motivo"], "novo")
+
+        self.fazer_quiz("token-pedro", 1, acertar=lambda p: p == 0)
+        _, analise, _ = self.pedir("GET", "/eu/analise", token="token-pedro")
+        disciplina = self.catalogo.por_id(1).disciplina
+        self.assertEqual(analise["disciplinas"][0]["disciplina"], disciplina)
+        self.assertEqual(analise["disciplinas"][0]["situacao"], "revisar")
+        self.assertEqual(analise["recomendacao"]["id"], 1)
+        self.assertEqual(analise["recomendacao"]["motivo"], "refazer")
+
+    def test_analise_da_turma(self):
+        for token in ("token-artur", "token-pedro"):
+            self.fazer_quiz(token, 3, acertar=lambda p: p != 0)
+        status, turma, _ = self.pedir("GET", "/analise/questoes")
+        self.assertEqual(status, 200)
+        self.assertEqual(turma["questoes"], [])
+
+        self.alunos_extras()
+        self.fazer_quiz("token-ana", 3, acertar=lambda p: p != 0)
+        _, turma, _ = self.pedir("GET", "/analise/questoes")
+        primeira = turma["questoes"][0]
+        self.assertEqual((primeira["quiz_id"], primeira["posicao"]), (3, 0))
+        self.assertEqual(primeira["respostas"], 3)
+        self.assertEqual(primeira["taxa_de_acerto"], 0)
+        self.assertNotIn("correta", json.dumps(turma))
+
+    def alunos_extras(self):
+        self.auth.alunos["token-ana"] = Aluno("u3", "Ana", "ana@exemplo.com")
 
 
 if __name__ == "__main__":

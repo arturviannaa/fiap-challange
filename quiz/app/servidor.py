@@ -9,6 +9,7 @@ from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
+from . import analise
 from .autenticacao import Aluno, ClienteDeAuth, ServicoDeAuthIndisponivel
 from .catalogo import Catalogo
 from .repositorio import Repositorio, agora
@@ -136,6 +137,20 @@ class Aplicacao:
             "historico": historico,
         }
 
+    def analise_do_aluno(self, token: str) -> dict:
+        aluno = self.aluno(token)
+        melhores = self.repositorio.resumo_do_usuario(aluno.id)["melhores"]
+        return {
+            "disciplinas": analise.por_disciplina(self.repositorio.respondidas_por_quiz(aluno.id), self.catalogo),
+            "recomendacao": analise.recomendar(melhores, self.catalogo),
+        }
+
+    def analise_da_turma(self) -> dict:
+        return {
+            "minimo_de_respostas": analise.MINIMO_DE_RESPOSTAS,
+            "questoes": analise.questoes_mais_erradas(self.repositorio.estatisticas_por_questao(), self.catalogo),
+        }
+
     # ---------- tentativa ----------
 
     def abrir(self, quiz_id: str, token: str) -> dict:
@@ -194,6 +209,8 @@ ROTAS = [
     ("POST", re.compile(r"^/tentativas/(\w+)/respostas$"), lambda app, m, q, c, t: app.responder(m[1], c, t)),
     ("POST", re.compile(r"^/tentativas/(\w+)/concluir$"), lambda app, m, q, c, t: app.concluir(m[1], t)),
     ("GET", re.compile(r"^/eu/resumo$"), lambda app, m, q, c, t: app.resumo(t)),
+    ("GET", re.compile(r"^/eu/analise$"), lambda app, m, q, c, t: app.analise_do_aluno(t)),
+    ("GET", re.compile(r"^/analise/questoes$"), lambda app, m, q, c, t: app.analise_da_turma()),
     ("GET", re.compile(r"^/ranking$"), lambda app, m, q, c, t: app.ranking(t)),
 ]
 
@@ -235,7 +252,10 @@ def criar_manipulador(app: Aplicacao, origens_permitidas: list[str]):
             return cabecalho[7:] if cabecalho.startswith("Bearer ") else ""
 
         def _corpo(self) -> dict:
-            tamanho = int(self.headers.get("Content-Length") or 0)
+            bruto_tamanho = self.headers.get("Content-Length") or "0"
+            if not bruto_tamanho.isdigit():
+                raise erro(400, "Cabeçalho Content-Length inválido.")
+            tamanho = int(bruto_tamanho)
             if tamanho > TAMANHO_MAXIMO_DO_CORPO:
                 raise erro(413, "Corpo da requisição grande demais.")
             bruto = self.rfile.read(tamanho) if tamanho else b"{}"
