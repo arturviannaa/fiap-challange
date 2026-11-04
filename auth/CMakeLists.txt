@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(anamnea_auth LANGUAGES CXX)
+project(lumna_auth LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -38,9 +38,9 @@ target_include_directories(auth_core PUBLIC src)
 target_link_libraries(auth_core PUBLIC OpenSSL::Crypto SQLite::SQLite3 nlohmann_json::nlohmann_json)
 target_compile_options(auth_core PRIVATE -Wall -Wextra -Wpedantic)
 
-add_executable(anamnea-auth src/main.cpp src/rotas.cpp)
-target_link_libraries(anamnea-auth PRIVATE auth_core httplib::httplib Threads::Threads)
-target_compile_options(anamnea-auth PRIVATE -Wall -Wextra)
+add_executable(lumna-auth src/main.cpp src/rotas.cpp)
+target_link_libraries(lumna-auth PRIVATE auth_core httplib::httplib Threads::Threads)
+target_compile_options(lumna-auth PRIVATE -Wall -Wextra)
 
 enable_testing()
 add_executable(testes tests/testes.cpp)

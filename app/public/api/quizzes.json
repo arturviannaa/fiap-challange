@@ -1,0 +1,1468 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "titulo": "Coração e grandes vasos",
+      "nivel": 1,
+      "disciplina": "Anatomia",
+      "descricao": "Este quiz avalia o conhecimento sobre as estruturas internas do coração, suas valvas e o suprimento sanguíneo miocárdico.",
+      "questoes": [
+        {
+          "enunciado": "Um paciente com sopro sistólico é avaliado por ecocardiograma. Qual é a função principal do ventrículo esquerdo?",
+          "alternativas": [
+            "Receber sangue oxigenado dos pulmões",
+            "Bombear sangue para o sistema pulmonar",
+            "Bombear sangue para a circulação sistêmica",
+            "Receber sangue desoxigenado do corpo"
+          ],
+          "correta": 2,
+          "explicacao": "O ventrículo esquerdo bombeia sangue oxigenado para toda a circulação sistêmica através da aorta. O átrio esquerdo recebe sangue dos pulmões, o ventrículo direito bombeia para os pulmões, e o átrio direito recebe sangue do corpo."
+        },
+        {
+          "enunciado": "Uma criança com cardiopatia congênita apresenta dificuldade na passagem de sangue do ventrículo direito para os pulmões. Qual valva cardíaca localiza-se entre o ventrículo direito e a artéria pulmonar?",
+          "alternativas": [
+            "Valva aórtica",
+            "Valva pulmonar",
+            "Valva mitral",
+            "Valva tricúspide"
+          ],
+          "correta": 1,
+          "explicacao": "A valva pulmonar está localizada entre o ventrículo direito e a artéria pulmonar. A valva aórtica fica entre o ventrículo esquerdo e a aorta."
+        },
+        {
+          "enunciado": "Um paciente em cateterismo cardíaco necessita visualizar as artérias coronárias. Qual é a primeira ramificação da aorta ascendente?",
+          "alternativas": [
+            "Artéria coronária circunflexa",
+            "Artéria subclávia direita",
+            "Tronco braquiocefálico",
+            "Artérias coronárias direita e esquerda"
+          ],
+          "correta": 3,
+          "explicacao": "As artérias coronárias direita e esquerda são as primeiras ramificações da aorta ascendente. A coronária esquerda se divide em interventricular anterior e circunflexa."
+        },
+        {
+          "enunciado": "Um paciente com insuficiência mitral faz ecocardiograma para avaliar o fluxo sanguíneo. De onde o átrio esquerdo recebe sangue?",
+          "alternativas": [
+            "Das veias pulmonares",
+            "Da veia cava inferior",
+            "Da veia cava superior",
+            "Do seio coronário"
+          ],
+          "correta": 0,
+          "explicacao": "O átrio esquerdo recebe sangue oxigenado através das quatro veias pulmonares. As veias cavas inferior e superior drenam para o átrio direito."
+        },
+        {
+          "enunciado": "Uma paciente com estenose mitral apresenta redução do fluxo de sangue durante o enchimento ventricular. Qual valva impede o refluxo de sangue do ventrículo esquerdo para o átrio esquerdo?",
+          "alternativas": [
+            "Valva aórtica",
+            "Valva mitral",
+            "Valva tricúspide",
+            "Valva pulmonar"
+          ],
+          "correta": 1,
+          "explicacao": "A valva mitral fecha durante a sístole ventricular e impede refluxo para o átrio esquerdo. A valva aórtica localiza-se entre o ventrículo esquerdo e a aorta, não entre câmaras."
+        },
+        {
+          "enunciado": "Um paciente apresenta infarto de parede inferior do miocárdio com elevação de ST. A artéria coronária direita irriga principalmente qual parede do ventrículo esquerdo?",
+          "alternativas": [
+            "Parede anterior",
+            "Parede lateral",
+            "Parede inferior",
+            "Septo interventricular"
+          ],
+          "correta": 2,
+          "explicacao": "A artéria coronária direita irriga a parede inferior do ventrículo esquerdo e a parede livre do ventrículo direito. A artéria interventricular anterior irriga a parede anterior."
+        },
+        {
+          "enunciado": "Durante procedimento de cateterismo cardíaco, o médico atravessa cuidadosamente as câmaras do coração. O septo interventricular separa qual estrutura?",
+          "alternativas": [
+            "O ventrículo direito do ventrículo esquerdo",
+            "O átrio direito do átrio esquerdo",
+            "O ventrículo esquerdo da artéria pulmonar",
+            "O ventrículo direito da aorta"
+          ],
+          "correta": 0,
+          "explicacao": "O septo interventricular separa os ventrículos direito e esquerdo. O septo interatrial separa os átrios."
+        },
+        {
+          "enunciado": "Um paciente em ecocardiograma apresenta fluxo alterado na veia cava superior. De qual região do corpo a veia cava superior coleta sangue desoxigenado?",
+          "alternativas": [
+            "Abdômen e pelve",
+            "Extremidades inferiores",
+            "Tecidos pulmonares",
+            "Cabeça, pescoço e membros superiores"
+          ],
+          "correta": 3,
+          "explicacao": "A veia cava superior coleta sangue desoxigenado da cabeça, pescoço, tórax e membros superiores. A veia cava inferior coleta do restante do corpo abaixo do diafragma."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Abdome: vísceras, peritônio e irrigação",
+      "nivel": 2,
+      "disciplina": "Anatomia",
+      "descricao": "Quiz sobre anatomia abdominal, com foco em vascularização, estruturas peritoneais e relações entre vísceras.",
+      "questoes": [
+        {
+          "enunciado": "Homem de 45 anos com dor abdominal pós-prandial há 2 meses, progressiva, acompanhada de perda ponderal. Tomografia com contraste evidencia redução do diâmetro luminal do duodeno. Qual artéria é responsável principalmente pela irrigação do jejuno?",
+          "alternativas": [
+            "Artéria gástrica direita",
+            "Artéria mesentérica inferior",
+            "Artéria esplênica",
+            "Artéria mesentérica superior"
+          ],
+          "correta": 3,
+          "explicacao": "A artéria mesentérica superior irriga o jejuno, o íleo e o duodeno a partir da papila, além do cólon direito. As artérias gástrica direita e esplênica irrigam o estômago; a mesentérica inferior, o cólon esquerdo."
+        },
+        {
+          "enunciado": "Paciente submetido a gastrectomia parcial para tratamento de câncer gástrico. Durante a dissecção, o cirurgião liga a artéria gástrica direita, que está contida em qual estrutura peritoneal?",
+          "alternativas": [
+            "Omento maior",
+            "Mesogástrio",
+            "Ligamento gastrohepático",
+            "Ligamento gastrocólico"
+          ],
+          "correta": 2,
+          "explicacao": "A artéria gástrica direita corre na curvatura menor, dentro do omento menor, cuja porção entre estômago e fígado é o ligamento gastrohepático. O omento maior pende da curvatura maior e cobre as alças; o gastrocólico é a parte dele entre estômago e cólon transverso."
+        },
+        {
+          "enunciado": "Adolescente apresenta quadro agudo de apendicite com perfuração. Inicialmente ocorre peritonite localizada na região de McBurney. Qual camada peritoneal está inicialmente envolvida na resposta inflamatória?",
+          "alternativas": [
+            "Peritônio parietal anterior",
+            "Peritônio visceral apendicular",
+            "Peritônio parietal lateral",
+            "Peritônio diafragmático"
+          ],
+          "correta": 1,
+          "explicacao": "O peritônio visceral reveste diretamente o apêndice e é a primeira superfície serosa em contato com a inflamação. O peritônio parietal envolve a cavidade peritoneal como um todo e responde secundariamente com inflamação e formação de aderências."
+        },
+        {
+          "enunciado": "Durante uma tomografia abdominal, o radiologista descreve que o pâncreas está localizado posteriormente ao peritônio parietal. Qual é a relação anatômica do pâncreas com a cavidade peritoneal?",
+          "alternativas": [
+            "Retroperitonealmente",
+            "Intraperitonealmente",
+            "Subperitonealmente",
+            "No mesentério"
+          ],
+          "correta": 0,
+          "explicacao": "Retroperitoneal é o órgão que fica atrás do peritônio parietal, coberto por ele só na face anterior. Pâncreas, rins e suprarrenais são retroperitoneais; jejuno e íleo ficam no mesentério, dentro da cavidade."
+        },
+        {
+          "enunciado": "Idoso com antecedentes de doença cardiovascular apresenta dor abdominal pós-prandial crônica, diarreia e emagrecimento. Angiografia mesentérica mostra oclusão crítica de um vaso. Qual artéria ocluída causa isquemia difusa de intestino delgado e cólon direito?",
+          "alternativas": [
+            "Artéria cólica direita",
+            "Artérias jejunais",
+            "Artéria mesentérica inferior",
+            "Artéria mesentérica superior"
+          ],
+          "correta": 3,
+          "explicacao": "A artéria mesentérica superior irriga intestino delgado, ceco, cólon ascendente e proximal do transverso. Sua oclusão causa isquemia extensa com emagrecimento e diarreia. A mesentérica inferior irriga apenas cólon descendente e sigmóide."
+        },
+        {
+          "enunciado": "Paciente com úlcera gástrica perfurada há 3 dias apresenta peritonite localizada. Na exploração cirúrgica, nota-se que o omento maior aderiu ao sítio de perfuração, isolando o processo inflamatório. Qual é o papel fisiológico do omento maior nesta situação?",
+          "alternativas": [
+            "Limitar a disseminação da infecção",
+            "Aumentar a vascularização gástrica",
+            "Facilitar a drenagem de pus",
+            "Neutralizar as toxinas bacterianas"
+          ],
+          "correta": 0,
+          "explicacao": "O omento maior tem capacidade de aderir a sítios de inflamação ou perfuração, criando um compartimento que limita a disseminação da infecção. É uma resposta fisiológica de proteção, diferente de sua participação na vascularização."
+        },
+        {
+          "enunciado": "Paciente com cirrose avançada desenvolve ascite progressiva. O líquido acumula-se entre duas camadas de uma membrana serosa. Em qual espaço peritoneal o líquido ascítico se acumula?",
+          "alternativas": [
+            "Entre o peritônio visceral e a parede abdominal",
+            "Dentro dos ligamentos peritoniais",
+            "Entre o peritônio parietal e o visceral",
+            "No espaço retroperitoneal"
+          ],
+          "correta": 2,
+          "explicacao": "A cavidade peritoneal é o espaço potencial entre peritônio parietal (que reveste a parede) e peritônio visceral (que reveste os órgãos). A ascite é o acúmulo patológico de líquido neste espaço."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Metabolismo da glicose, insulina e glucagon",
+      "nivel": 1,
+      "disciplina": "Bioquímica",
+      "descricao": "Os papéis de insulina e glucagon na regulação da glicemia e os processos ativados no estado alimentado e no jejum.",
+      "questoes": [
+        {
+          "enunciado": "Após uma refeição com carboidratos, a glicose plasmática aumenta. O pâncreas responde secretando insulina, que atua em seus tecidos-alvo para restaurar a homeostase glicêmica. Qual é o principal efeito imediato da insulina no metabolismo da glicose?",
+          "alternativas": [
+            "Promove a captação de glicose pelas células e seu armazenamento como glicogênio",
+            "Inibe a síntese de glicogênio para evitar sobrecarga energética",
+            "Estimula a degradação de proteínas para aumentar aminoácidos circulantes",
+            "Reduz a atividade das enzimas glicolíticas no fígado"
+          ],
+          "correta": 0,
+          "explicacao": "A insulina é um hormônio anabólico liberado em resposta ao aumento de glicose plasmática. Promove a captação de glicose pelos tecidos periféricos e seu armazenamento como glicogênio, reduzindo a glicemia. A inibição de síntese de glicogênio contradiz seu papel anabólico."
+        },
+        {
+          "enunciado": "Um paciente em jejum prolongado apresenta hipoglicemia. O pâncreas reduz a secreção de insulina e aumenta a de glucagon para manter a glicemia. Qual dessas ações do glucagon mantém a glicemia durante o jejum?",
+          "alternativas": [
+            "Aumenta a captação de glicose pelos hepatócitos e adipócitos",
+            "Estimula a glicogenólise no fígado, liberando glicose na circulação",
+            "Inibe a oxidação de ácidos graxos nos adipócitos durante o jejum",
+            "Favorece a síntese de novo de glicogênio a partir de piruvato"
+          ],
+          "correta": 1,
+          "explicacao": "Glucagon estimula a glicogenólise, quebrando o glicogênio hepático e liberando glicose na circulação, aumentando rapidamente a glicemia durante o jejum. A captação de glicose pelos hepatócitos teria efeito oposto, e a síntese de glicogênio ocorre com insulina alta."
+        },
+        {
+          "enunciado": "Após uma refeição, o organismo entra no estado alimentado: insulina alta, glucagon baixo e metabolismo predominantemente anabólico. Qual processo é ativado preferencialmente nesse estado?",
+          "alternativas": [
+            "Gliconeogênese hepática a partir de precursores não-carboidratos",
+            "Cetogênese no fígado para produção de corpos cetônicos",
+            "Lipogênese, convertendo o excesso de carboidratos em ácidos graxos",
+            "Proteólise muscular para liberar aminoácidos circulantes"
+          ],
+          "correta": 2,
+          "explicacao": "No estado alimentado, a insulina alta promove o armazenamento de energia: a lipogênese converte o excesso de glicose em ácidos graxos para depósito. Gliconeogênese e proteólise pertencem ao jejum, quando o glucagon está alto e a energia é escassa."
+        },
+        {
+          "enunciado": "Após 24 horas de jejum completo, a glicemia está mantida, mas o estoque de glicogênio está quase depletado. O fígado ativa novos mecanismos para sintetizar glicose a partir de precursores não-carboidratos. Qual é o principal mecanismo responsável por manter a glicemia nesse estágio do jejum prolongado?",
+          "alternativas": [
+            "Gliconeogênese hepática a partir de lactato, alanina e glicerol",
+            "Glicogenólise contínua dos depósitos de glicogênio musculares",
+            "Captação direta de glicose pelos hepatócitos a partir da circulação",
+            "Síntese de novo de glicogênio a partir de ácidos graxos"
+          ],
+          "correta": 0,
+          "explicacao": "Gliconeogênese sintetiza nova glicose a partir de lactato, alanina e glicerol, sendo o principal mecanismo de manutenção glicêmica quando o glicogênio se esgota. Glicogênio muscular não libera glicose na circulação pois o músculo carece de glicose-6-fosfatase."
+        },
+        {
+          "enunciado": "Uma célula muscular recebe um sinal de insulina alta após uma refeição. O transportador GLUT4, que permanecia no interior da célula, se transloca para a membrana plasmática. Qual é a consequência imediata dessa translocação de GLUT4?",
+          "alternativas": [
+            "Redução da taxa de síntese de ATP mitocondrial",
+            "Aumento da captação de glicose pela célula muscular",
+            "Inibição da quebra de glicogênio armazenado",
+            "Bloqueio da ação de hormônios contra-reguladores"
+          ],
+          "correta": 1,
+          "explicacao": "GLUT4 é o transportador de glicose insulino-dependente presente em células musculares. Quando insulina se liga a seu receptor, GLUT4 é translocado para a membrana plasmática, permitindo entrada de glicose na célula. Essa translocação é essencial para a captação em condições de insulina elevada."
+        },
+        {
+          "enunciado": "Uma pessoa com resistência à insulina apresenta receptores funcionais, mas a sinalização intracelular está prejudicada. Apesar de níveis elevados de insulina circulante, a captação de glicose pelos tecidos é reduzida. Qual é o resultado dessa resistência à insulina nos níveis de glicemia?",
+          "alternativas": [
+            "Hipoglicemia crônica, pois a glicose seria capturada normalmente sem resistência",
+            "Normalização automática da glicemia através de aumento compensatório de glucagon",
+            "Hiperglicemia, pois a glicose não é captada adequadamente pelos tecidos",
+            "Esgotamento rápido dos estoques hepáticos e musculares de glicogênio"
+          ],
+          "correta": 2,
+          "explicacao": "Resistência à insulina prejudica a sinalização intracelular, impedindo a resposta das células ao hormônio. A glicose não é captada adequadamente pelos tecidos periféricos, levando a hiperglicemia. Hipoglicemia ocorreria apenas se insulina estivesse alta e os tecidos a recebessem normalmente."
+        },
+        {
+          "enunciado": "Imediatamente após uma refeição rica em carboidratos, os níveis plasmáticos de insulina aumentam enquanto os de glucagon diminuem. Esse balanço hormonal determina para qual via metabólica a glicose será direcionada. Nessas condições de insulina alta e glucagon baixo, qual processo predomina no metabolismo hepático de glicose?",
+          "alternativas": [
+            "Gliconeogênese, que é estimulada em baixos níveis de glucagon",
+            "Glicogenólise, que ocorre independentemente de estímulos hormonais",
+            "Oxidação completa de glicose através da via glicolítica",
+            "Síntese e armazenamento de glicogênio a partir da glicose captada"
+          ],
+          "correta": 3,
+          "explicacao": "Com insulina alta e glucagon baixo, o fígado sintetiza e armazena glicogênio a partir da glicose captada. Esse balanço hormonal suprime glicogenólise e gliconeogênese. Glicogenólise predomina quando glucagon está elevado e insulina está baixa."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Equilíbrio ácido-base e tampões",
+      "nivel": 2,
+      "disciplina": "Bioquímica",
+      "descricao": "Aplicação de mecanismos de tamponamento em situações clínicas e fisiológicas: compensações respiratórias e metabólicas, papel de diferentes tampões e distúrbios eletrolíticos associados.",
+      "questoes": [
+        {
+          "enunciado": "Um paciente com insuficiência renal crônica apresenta pH sanguíneo 7.25, bicarbonato 15 mEq/L e pressão parcial de CO2 de 32 mmHg. Qual é o distúrbio ácido-base primário?",
+          "alternativas": [
+            "Acidose respiratória com tentativa de compensação metabólica",
+            "Acidose metabólica com tentativa de compensação respiratória",
+            "Alcalose metabólica com tentativa de compensação respiratória",
+            "Alcalose respiratória com tentativa de compensação metabólica"
+          ],
+          "correta": 1,
+          "explicacao": "O pH baixo indica acidose. O bicarbonato reduzido sugere perda ou consumo metabólico, caracterizando acidose metabólica. A redução de CO2 reflete compensação respiratória apropriada (hiperventilação). Na insuficiência renal, ocorre retenção de ácidos não-voláteis."
+        },
+        {
+          "enunciado": "Uma jogadora de voleibol faz hiperventilação durante o aquecimento e relata formigamento nos lábios e dedos. A hiperventilação remove CO2. Qual mecanismo explica os sintomas neurológicos?",
+          "alternativas": [
+            "Hiperventilação aumenta PaCO2, causando narcose pelo CO2",
+            "Hipercalcemia causada pelo aumento de excreção renal de cálcio",
+            "Alcalose reduz cálcio ionizado por aumento de ligação à albumina",
+            "Acidose respiratória estimula contração muscular excessiva"
+          ],
+          "correta": 2,
+          "explicacao": "A hiperventilação remove CO2, elevando o pH (alcalose respiratória). Em pH elevado, mais cálcio se liga à albumina, reduzindo cálcio ionizado. O cálcio ionizado governa a excitabilidade neuronal; sua redução causa parestesias e tetania."
+        },
+        {
+          "enunciado": "Um paciente em uso de acetazolamida (inibidor da anidrase carbônica) para glaucoma evolui com fadiga e respiração mais profunda. O fármaco bloqueia a reabsorção de bicarbonato nos túbulos renais. Qual é a consequência imediata desse bloqueio?",
+          "alternativas": [
+            "Hipocloremia por aumento da reabsorção de cloro distal",
+            "Alcalose urinária e retenção de bicarbonato no filtrado",
+            "Acidose respiratória por redução de ventilação pulmonar",
+            "Acidose metabólica por perda renal de bicarbonato"
+          ],
+          "correta": 3,
+          "explicacao": "A anidrase carbônica nos rins reabsorve bicarbonato filtrado. Seu bloqueio causa perda urinária de bicarbonato, resultando em acidose metabólica. A respiração profunda é compensação respiratória para reduzir CO2."
+        },
+        {
+          "enunciado": "Um paciente com diarreia crônica apresenta perda fecal de bicarbonato. Por que a diarreia causa acidose metabólica enquanto vômito causa alcalose?",
+          "alternativas": [
+            "Diarreia remove base (bicarbonato) diretamente; vômito remove ácido (HCl gástrico)",
+            "Diarreia altera permeabilidade intestinal; vômito afeta apenas mucosa gástrica",
+            "Diarreia aumenta velocidade de esvaziamento gástrico; vômito não",
+            "Diarreia causa hipotensão e choque, consumindo tampões"
+          ],
+          "correta": 0,
+          "explicacao": "A diarreia remove bicarbonato (base), deixando ácido relativo no sangue. O vômito remove ácido clorídrico, deixando base relativa (alcalose). O resultado oposto decorre dessa diferença de composição eletrolítica perdida."
+        },
+        {
+          "enunciado": "Hemoglobina é um tampão proteico importante. Um paciente com anemia grave tem redução de hemoglobina de 15 g/dL para 7 g/dL. Qual é a repercussão na capacidade tamponante?",
+          "alternativas": [
+            "Capacidade tamponante aumentada pela compensação com outras proteínas",
+            "Sem alteração, pois fosfato intracelular compensa imediatamente",
+            "Capacidade tamponante reduzida, pois hemoglobina em menor quantidade tampona menos",
+            "Aumento transitório pela maior liberação de ácido lático em hipóxia"
+          ],
+          "correta": 2,
+          "explicacao": "Hemoglobina contribui para o poder tamponador através de seus grupos amino e carboxila. Com menos hemoglobina, menos sítios de tamponamento estão disponíveis, reduzindo a capacidade tamponante do sangue total. Outras proteínas plasmáticas não compensam essa perda."
+        },
+        {
+          "enunciado": "Um paciente com cetoacidose diabética não controlada tem pH 7.1, bicarbonato 10 mEq/L e pressão de CO2 de 28 mmHg. A hiperglicemia e depleção de volume ocorrem simultaneamente. Por que a compensação respiratória não normalizou o pH?",
+          "alternativas": [
+            "O CO2 exalado é reabsorvido pelos pulmões antes de deixar o corpo",
+            "A acidose metabólica é tão intensa que a compensação respiratória é insuficiente",
+            "Proteínas plasmáticas estão saturadas e não permitem mais tamponamento",
+            "A redução de CO2 estimula os quimiorreceptores a aumentar ainda mais ventilação"
+          ],
+          "correta": 1,
+          "explicacao": "A cetoacidose diabética produz excesso de corpos cetônicos, causando acidose metabólica grave. A compensação respiratória reduz CO2, mas não consegue eliminar os ácidos não-voláteis acumulados. O sistema tampão fica esgotado e o pH permanece baixo."
+        },
+        {
+          "enunciado": "Um paciente com insuficiência cardíaca descompensada está em edema pulmonar (hipoventilação relativa) e tem pressão de CO2 elevada. Simultaneamente, toma diurético que causa perda de potássio. Por que a hipocalemia piora a alcalose concomitante?",
+          "alternativas": [
+            "Potássio baixo estimula síntese de hemoglobina reduzida",
+            "A deficiência de potássio aumenta excreção renal de bicarbonato",
+            "Hipocalemia reduz ionização de cálcio no soro",
+            "Potássio baixo desloca H+ para dentro das células, deixando o sangue mais alcalino"
+          ],
+          "correta": 3,
+          "explicacao": "Em hipocalemia, ocorre troca iônica: H+ entra nas células enquanto K+ sai. Isso reduz H+ plasmático, piorando a alcalose. O diurético causa alcalose por perda de ácido (cloro) e volume, agravada pelo desvio de H+ para o intracelular."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Gastrulação e Folhetos Germinativos",
+      "nivel": 1,
+      "disciplina": "Embriologia",
+      "descricao": "Reconheça os folhetos embrionários, fases da gastrulação e as estruturas que originam de cada camada germinativa.",
+      "questoes": [
+        {
+          "enunciado": "A gastrulação é um processo crítico do desenvolvimento embrionário que ocorre após a blastulação. O que melhor descreve a gastrulação?",
+          "alternativas": [
+            "Formação da blástula através de sucessivas divisões celulares",
+            "Reorganização do embrião em três folhetos germinativos",
+            "Implantação do embrião no tecido endometrial",
+            "Diferenciação das células germinativas em gametas maduros"
+          ],
+          "correta": 1,
+          "explicacao": "A gastrulação é o movimento coordenado de células que cria o ectoderme, mesoderme e endoderme. A formação da blástula precede a gastrulação, enquanto a implantação ocorre antes dela."
+        },
+        {
+          "enunciado": "Durante a gastrulação, o embrião se reorganiza e forma três camadas celulares distintas. Qual é a sequência correta dos três folhetos primários?",
+          "alternativas": [
+            "Sincício, trofoblasto e disco bilaminar",
+            "Âmnio, córion e saco vitelino",
+            "Ectoderme, mesoderme e endoderme",
+            "Notocorda, mesoderme paraxial e mesoderme somítica"
+          ],
+          "correta": 2,
+          "explicacao": "Os três folhetos germinativos primários são ectoderme, mesoderme e endoderme. As outras opções referem-se a estruturas anexiais ou derivadas dos folhetos."
+        },
+        {
+          "enunciado": "O encéfalo e a medula espinal começam seu desenvolvimento no embrião de 3 semanas. A qual folheto embrionário pertence a origem do sistema nervoso central?",
+          "alternativas": [
+            "Endoderme",
+            "Mesoderme",
+            "Ectoderme",
+            "Notocorda"
+          ],
+          "correta": 2,
+          "explicacao": "O sistema nervoso central origina-se da ectoderme durante a neurulação. A notocorda influencia a formação da medula espinal mas é uma estrutura distinta."
+        },
+        {
+          "enunciado": "O esôfago, estômago e intestinos começam a formar-se durante a gastrulação a partir de uma estrutura central. A qual folheto embrionário pertence a origem do tubo digestivo?",
+          "alternativas": [
+            "Ectoderme",
+            "Endoderme",
+            "Mesoderme",
+            "Notocorda"
+          ],
+          "correta": 1,
+          "explicacao": "O tubo digestivo origina-se da endoderme. A mesoderme circundante forma as camadas musculares e o tecido conjuntivo que envolvem esse tubo."
+        },
+        {
+          "enunciado": "Os ossos e cartilagens do corpo desenvolvem-se a partir de um folheto embrionário específico. De qual folheto origina-se o esqueleto axial e apendicular?",
+          "alternativas": [
+            "Endoderme (camada mais interna)",
+            "Ectoderme (camada mais externa)",
+            "Mesoderme (camada intermediária)",
+            "Notocorda (estrutura organizadora)"
+          ],
+          "correta": 2,
+          "explicacao": "O esqueleto axial e apendicular origina-se da mesoderme, particularmente do mesoderme paraxial. A endoderme e a ectoderme não participam da formação óssea."
+        },
+        {
+          "enunciado": "O fígado é um órgão grande e complexo que se desenvolve como divertículo de uma estrutura anterior. De qual estrutura o fígado se origina?",
+          "alternativas": [
+            "Do duodeno derivado da endoderme",
+            "Do estômago derivado da ectoderme",
+            "Do pâncreas derivado da mesoderme",
+            "Do timo derivado da endoderme"
+          ],
+          "correta": 0,
+          "explicacao": "O fígado origina-se como um divertículo endodérmico do duodeno primitivo. Embora o epitélio do fígado derive da endoderme, o estroma e o suprimento vascular originam-se da mesoderme."
+        },
+        {
+          "enunciado": "A gastrulação humana inicia-se logo após a formação da blástula. Quando ocorre principalmente a gastrulação no desenvolvimento humano?",
+          "alternativas": [
+            "Durante a primeira semana após fertilização",
+            "Durante a segunda e terceira semanas",
+            "Durante a quinta e sexta semanas",
+            "Durante a oitava e nona semanas"
+          ],
+          "correta": 1,
+          "explicacao": "A gastrulação ocorre entre a segunda e terceira semanas do desenvolvimento. Na primeira semana ocorrem fertilização e implantação, não gastrulação."
+        },
+        {
+          "enunciado": "A notocorda é uma estrutura importante que aparece durante a gastrulação e tem papel organizador no embrião. Qual é o papel mais importante da notocorda durante a embriogênese?",
+          "alternativas": [
+            "Induzir a formação do sistema nervoso central",
+            "Formar o esqueleto axial de todo corpo",
+            "Originar a totalidade dos músculos esqueléticos",
+            "Desenvolver os órgãos do sistema digestivo"
+          ],
+          "correta": 0,
+          "explicacao": "A notocorda induz a ectoderme sobrejacente a formar o sistema nervoso central através de sinais moleculares. Essa estrutura desaparece em grande parte, deixando apenas o núcleo pulposo do disco intervertebral em humanos."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Desenvolvimento do coração e circulação fetal",
+      "nivel": 2,
+      "disciplina": "Embriologia",
+      "descricao": "Estruturas e mecanismos da cardiogênese, shunts fetais e mudanças circulatórias ao nascimento.",
+      "questoes": [
+        {
+          "enunciado": "Feto de 8 semanas apresenta no ultrassom estrutura que conecta a aorta descendente à artéria pulmonar esquerda. Durante a vida fetal, esse vaso permite equilíbrio nas pressões ventriculares. Qual é a estrutura observada e qual será o seu destino fisiológico após o nascimento?",
+          "alternativas": [
+            "Artéria subclávia; sofre regressão gradual",
+            "Ducto arterioso; transforma-se em ligamento arterioso",
+            "Arco aórtico; passa a formar a aorta ascendente",
+            "Artéria pulmonar direita; conecta-se definitivamente à aorta"
+          ],
+          "correta": 1,
+          "explicacao": "O ducto arterioso permite ao ventrículo direito não sobrecarregar durante a vida fetal, pois o pulmão oferece alta resistência. Após o nascimento, a resistência pulmonar cai drasticamente, o fluxo se inverte, o ducto se fecha funcionalmente e sofre obliteração fibrosa, tornando-se o ligamento arterioso."
+        },
+        {
+          "enunciado": "Lactente de 2 meses é diagnosticado com comunicação interatrial do tipo ostium primum, junto ao canal atrioventricular. Qual estrutura embriológica teve desenvolvimento deficiente?",
+          "alternativas": [
+            "Septum secundum",
+            "Septum primum",
+            "Endocárdio atrial",
+            "Túnica média das veias pulmonares"
+          ],
+          "correta": 1,
+          "explicacao": "O septo primum cresce do teto do átrio em direção ao canal atrioventricular, dividindo o átrio primitivo em direito e esquerdo. Defeitos no septo primum resultam em comunicações interatriais tipo ostium primum. O septo secundum é uma segunda camada de tecido que reforça o septo primum e cujo desenvolvimento incompleto causa os defeitos tipo ostium secundum."
+        },
+        {
+          "enunciado": "Durante a embriogênese, o terceiro arco faríngeo contribui para a formação de estruturas vasculares. A artéria do terceiro arco persiste e forma uma das principais artérias do crânio. Qual é o nome dessa artéria?",
+          "alternativas": [
+            "Artéria carótida externa",
+            "Artéria subclávia",
+            "Artéria pulmonar",
+            "Artéria carótida interna"
+          ],
+          "correta": 3,
+          "explicacao": "O terceiro arco faríngeo origina a artéria carótida interna, que persiste bilateralmente e supre a região anterior do encéfalo. A carótida externa deriva de um ramo da aorta dorsal distal do terceiro arco. Os outros arcos têm destinos diferentes, formando estruturas distintas do arco aórtico."
+        },
+        {
+          "enunciado": "Feto de 6 meses apresenta no ultrassom um vaso que leva o sangue da veia umbilical diretamente à veia cava inferior, sem passar pelo parênquima hepático. Qual é essa estrutura?",
+          "alternativas": [
+            "Ducto venoso; desvia o sangue umbilical antes de perfundir o fígado fetal",
+            "Forame oval; conecta diretamente átrio direito ao esquerdo",
+            "Ducto arterioso; desvia sangue da circulação pulmonar",
+            "Canal atrioventricular; permite comunicação atrial"
+          ],
+          "correta": 0,
+          "explicacao": "O ducto venoso liga a veia umbilical à veia cava inferior e leva boa parte do sangue oxigenado da placenta direto ao coração, sem passar pelos sinusoides hepáticos. Após o nascimento fecha e vira o ligamento venoso."
+        },
+        {
+          "enunciado": "Recém-nascido apresenta sopro holossistólico em ápice cardíaco. O ecocardiograma mostra defeito no septo ventricular muscular. O cardiologista explica que essa estrutura se forma a partir do miocárdio ventricular em desenvolvimento. Qual é a origem embrionária do septo ventricular muscular?",
+          "alternativas": [
+            "Mesoderma somático visceral",
+            "Miocárdio trabecular em expansão",
+            "Endocárdio auricular",
+            "Crista neural cardíaca"
+          ],
+          "correta": 1,
+          "explicacao": "O septo ventricular muscular se forma pela expansão do miocárdio trabecular das paredes ventriculares, que cresce em direção ao canal atrioventricular. O septo membranáceo forma-se pela fusão de três componentes: a crista aorticopulmonar, o mesênquima endocárdio do canal atrioventricular e o septo muscular."
+        },
+        {
+          "enunciado": "Lactente de 3 meses apresenta cianose progressiva. O ecocardiograma mostra grande comunicação interventricular muscular com desvio bidirecional de sangue e um dos grandes vasos saindo completamente do ventrículo direito. Qual complicação septal combinada com malposição de grandes vasos pode resultar em cianose neonatal severa?",
+          "alternativas": [
+            "Comunicação interatrial com estenose pulmonar",
+            "Persistência do ducto arterioso isolada",
+            "Transposição dos grandes vasos com comunicação interventricular",
+            "Coarctação da aorta com valva aórtica bicúspide"
+          ],
+          "correta": 2,
+          "explicacao": "A transposição dos grandes vasos ocorre quando há inversão na origem aorticopulmonar durante a embriogênese. O sangue desoxigenado vai para a aorta e o oxigenado retorna aos pulmões, incompatível com a vida sem shunts. Uma comunicação interventricular permite alguma mistura sanguínea essencial para a sobrevida."
+        },
+        {
+          "enunciado": "Embrião de 5 semanas apresenta no ultrassom o tubo cardíaco já em dobramento. O segmento atrial está em sua posição dorsal e os ventrículos começam a se expandir. Que evento do desenvolvimento cardíaco primitivo permite a formação das câmaras cardíacas a partir do tubo inicial?",
+          "alternativas": [
+            "Aposição do miocárdio e endocárdio",
+            "Formação de trabéculas miocárdicas e sulcos de demarcação",
+            "Espessamento uniforme das paredes cardíacas",
+            "Proliferação isolada de células endocárdicas"
+          ],
+          "correta": 1,
+          "explicacao": "O tubo cardíaco primitivo sofre dobramento e depois diferenciação em câmaras através da formação de trabéculas miocárdicas que definem ventrículo de átrio e sulcos de demarcação entre regiões. Esses sulcos marcam as divisões atrioventriculares e entre ventrículo e bulbo cardíaco, permitindo a formação das câmaras distintas."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Regulação da pressão arterial",
+      "nivel": 2,
+      "disciplina": "Fisiologia",
+      "descricao": "Questões sobre barorreflexo e sistema renina-angiotensina aplicados a situações clínicas e fisiológicas.",
+      "questoes": [
+        {
+          "enunciado": "Um paciente com pressão arterial elevada apresenta aumento dos sinais de estiramento nos barorreceptores carotídeos. Qual é a resposta imediata esperada?",
+          "alternativas": [
+            "Aumento da liberação de renina pelas células justaglomerulares",
+            "Aumento da frequência cardíaca e força de contração do coração",
+            "Aumento do tônus parassimpático e redução do tônus simpático",
+            "Aumento da reabsorção de sódio nos túbulos renais coletores"
+          ],
+          "correta": 2,
+          "explicacao": "Os barorreceptores carotídeos detectam elevação de pressão e disparam reflexo vagal que aumenta tônus parassimpático e reduz tônus simpático, diminuindo frequência cardíaca e débito. O aumento de renina ocorre com pressão baixa, não elevada."
+        },
+        {
+          "enunciado": "Após hemorragia aguda, um paciente apresenta queda de pressão arterial. Os barorreceptores detectam essa redução. Qual sequência de eventos será acionada?",
+          "alternativas": [
+            "Aumento do tônus simpático e ativação do sistema renina-angiotensina",
+            "Diminuição do tônus parassimpático apenas sem ativação hormonal",
+            "Aumento da vasodilatação periférica para compensar queda de pressão",
+            "Aumento da filtração glomerular para manter perfusão renal"
+          ],
+          "correta": 0,
+          "explicacao": "Pressão baixa inibe barorreceptores, reduzindo tônus parassimpático e aumentando simpático simultaneamente. O sistema renina-angiotensina é ativado pela queda de pressão perfusória renal. Vasodilatação pioraria a situação e filtração aumenta com pressão alta, não baixa."
+        },
+        {
+          "enunciado": "Um paciente em uso de inibidor de ECA para hipertensão apresenta redução significativa da pressão arterial. Qual mecanismo explica esse efeito?",
+          "alternativas": [
+            "Bloqueio direto da reabsorção de sódio em todo o néfron",
+            "Redução da conversão de angiotensina I em angiotensina II",
+            "Aumento da vasodilatação das arteríolas aferentes renais",
+            "Inibição completa dos barorreceptores carotídeos e aórticos"
+          ],
+          "correta": 1,
+          "explicacao": "A enzima conversora transforma angiotensina I em angiotensina II, o principal vasoconstritor do sistema. Bloqueá-la reduz a angiotensina II e, com ela, a vasoconstrição e a liberação de aldosterona. O fármaco não age direto no néfron nem nos barorreceptores."
+        },
+        {
+          "enunciado": "Uma mulher com pressão arterial normal toma um vasodilatador e apresenta queda súbita de pressão. Os barorreflexos são acionados. O que ocorrerá com sua frequência cardíaca?",
+          "alternativas": [
+            "Diminuirá progressivamente até estabilizar em novo patamar",
+            "Permanecerá inalterada porque o barorreflexo não afeta frequência",
+            "Aumentará devido ao aumento do tônus simpático compensatório",
+            "Aumentará transitoriamente e depois retornará lentamente ao baseline"
+          ],
+          "correta": 2,
+          "explicacao": "Pressão baixa inibe barorreceptores para aumentar tônus simpático, elevando frequência e força cardíaca como compensação. O parassimpático diminui simultaneamente. Essa resposta é rápida e proporcional ao grau de hipotensão."
+        },
+        {
+          "enunciado": "Um paciente com depleção de volume intracelular apresenta ativação do sistema renina-angiotensina-aldosterona. Qual é o principal estímulo para liberação de aldosterona nesse contexto?",
+          "alternativas": [
+            "Angiotensina II circulante",
+            "Redução do peptídeo natriurético atrial plasmático",
+            "Aumento de adrenalina pelas glândulas suprarrenais",
+            "Aumento de bradicinina no interstício renal"
+          ],
+          "correta": 0,
+          "explicacao": "A angiotensina II é o regulador primário de liberação de aldosterona pelas células da zona glomerulosa. Embora baixa pressão seja o gatilho inicial, a angiotensina II é o intermediário direto e mais potente. Peptídeo natriurético atrial inibe aldosterona, não estimula."
+        },
+        {
+          "enunciado": "Um atleta durante exercício físico intenso apresenta aumento de pressão arterial. Tanto barorreflexo quanto sistema renina-angiotensina estão ativados. Qual é o propósito primário do barorreflexo nessa situação?",
+          "alternativas": [
+            "Bloquear completamente a ativação do sistema renina-angiotensina",
+            "Aumentar ainda mais a pressão para melhor perfusão muscular",
+            "Reduzir a frequência cardíaca apesar da atividade muscular",
+            "Prevenir aumento excessivo de pressão mantendo homeostase"
+          ],
+          "correta": 3,
+          "explicacao": "O barorreflexo funciona continuamente para manter pressão dentro de limites seguros, evitando picos perigosos. Durante exercício, ele modera os efeitos simpáticos, enquanto o sistema renina-angiotensina apoia manutenção de perfusão. Bloqueá-lo completamente prejudicaria a adaptação."
+        },
+        {
+          "enunciado": "Um paciente hipertenso em tratamento com antagonista de receptor de angiotensina II apresenta aumento de renina plasmática. Qual será o efeito esperado sobre liberação de renina?",
+          "alternativas": [
+            "Diminuirá porque a vasoconstrição compensatória reduz estímulo renal",
+            "Aumentará porque há perda do feedback negativo da angiotensina II",
+            "Permanecerá inalterada porque antagonistas não afetam síntese de renina",
+            "Aumentará apenas se houver diminuição simultânea de sódio filtrado"
+          ],
+          "correta": 1,
+          "explicacao": "Os antagonistas bloqueiam as ações da angiotensina II, inclusive a retroalimentação negativa sobre as células justaglomerulares. Sem esse freio, a liberação de renina aumenta, e a angiotensina II circulante sobe sem conseguir agir no receptor bloqueado."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Fisiologia respiratória",
+      "nivel": 2,
+      "disciplina": "Fisiologia",
+      "descricao": "Ventilação, trocas gasosas, transporte de oxigênio e adaptações fisiológicas em diferentes cenários clínicos.",
+      "questoes": [
+        {
+          "enunciado": "Um paciente com enfisema apresenta sibilância expiratória e redução dos fluxos expiratórios na espirometria, particularmente no final da expiração. Qual mecanismo fisiopatológico explica essa redução preferencial do fluxo?",
+          "alternativas": [
+            "Colapso dinâmico das vias aéreas durante a expiração",
+            "Redução da complacência pulmonar",
+            "Aumento da resistência das vias aéreas inspiratórias",
+            "Paralisia dos músculos expiratórios"
+          ],
+          "correta": 0,
+          "explicacao": "No enfisema, a perda de fibras elásticas reduz o suporte radial das vias aéreas. Durante a expiração, quando a pressão intrapleural se torna positiva, as vias aéreas colapsam, limitando o fluxo de saída. A complacência está aumentada, não reduzida, e a resistência inspiratória é frequentemente normal."
+        },
+        {
+          "enunciado": "Um paciente fumante com enfisema apresenta hipoxemia persistente em repouso mesmo com função pulmonar levemente preservada em algumas regiões. Qual alteração predominante da relação ventilação-perfusão explica a hipoxemia?",
+          "alternativas": [
+            "Áreas com alta V/Q (ventilação sem perfusão)",
+            "Áreas com baixa V/Q (perfusão sem ventilação adequada)",
+            "Shunt pulmonar completo",
+            "Aumento uniforme da V/Q em todos os pulmões"
+          ],
+          "correta": 1,
+          "explicacao": "No enfisema, a destruição alveolar reduz a ventilação em algumas áreas, enquanto a perfusão persiste. Regiões com V/Q baixa não oxigenam adequadamente o sangue. Áreas com V/Q alta não causam hipoxemia porque o sangue já está saturado."
+        },
+        {
+          "enunciado": "Um paciente com fibrose pulmonar intersticial apresenta PaO2 de 65 mmHg em repouso, mas melhora para 85 mmHg ao receber oxigênio suplementar. A PCO2 está normal. Por que o PCO2 permanece normal apesar da hipoxemia?",
+          "alternativas": [
+            "Shunt direto com ausência de resposta a oxigênio",
+            "A taquipneia compensa a produção de CO2 enquanto a difusão prejudicada mantém hipoxemia",
+            "Hipoventilação grave com bloqueio de vias aéreas",
+            "Pressão parcial inspirada de oxigênio reduzida"
+          ],
+          "correta": 1,
+          "explicacao": "Na fibrose, o espessamento alveolar prejudica a difusão de O2 mais que a de CO2. O paciente hiperventila reflexamente, mantendo PCO2 normal, mas não eleva a PaO2 em repouso. Ao receber oxigênio, o gradiente aumenta e melhora."
+        },
+        {
+          "enunciado": "Um paciente com anemia grave (hemoglobina 3 g/dL) tem PaO2 de 95 mmHg em ar ambiente, saturação normal e função pulmonar normal. Por que ele apresenta hipóxia tecidual apesar de PaO2 e saturação normais?",
+          "alternativas": [
+            "A capacidade total de transporte de oxigênio está reduzida pela falta de hemoglobina",
+            "A PaO2 está falsamente normal por erro de medição",
+            "Os pulmões não conseguem elevar a PaO2 acima de 95 mmHg",
+            "A saturação está na verdade reduzida para 85%"
+          ],
+          "correta": 0,
+          "explicacao": "O conteúdo arterial de oxigênio depende de PaO2, saturação e hemoglobina (CaO2 = 1,34 x Hb x SaO2 + 0,003 x PaO2). Com hemoglobina de 3 g/dL, mesmo com saturação de 100%, o transporte está severamente comprometido. A PaO2 de 95 mmHg está realmente normal."
+        },
+        {
+          "enunciado": "Durante o sono, um paciente com doença pulmonar crônica apresenta pH 7,28 e PCO2 de 56 mmHg, com HCO3- de 24 mEq/L (ainda sem compensação renal). Qual mecanismo respiratório está primariamente alterado?",
+          "alternativas": [
+            "Aumento da produção metabólica de CO2",
+            "Alcalose metabólica com hiperventilação reflexa",
+            "Redução do drive respiratório durante o sono, causando hipoventilação",
+            "Bloqueio de via aérea proximal"
+          ],
+          "correta": 2,
+          "explicacao": "Durante o sono o controle voluntário da respiração some e sobra o automático, guiado pelos quimiorreceptores. Em quem tem reserva respiratória reduzida, isso basta para hipoventilar e reter CO2. A produção de CO2 não aumenta e não há obstrução de via aérea."
+        },
+        {
+          "enunciado": "Uma pessoa sobe para 3500 metros. Nos primeiros dias, sua PaO2 cai para 55 mmHg, mas a ventilação aumenta. Após uma semana, há aumento de 2,3-difosfoglicerato (2,3-DPG) nas hemácias. Qual vantagem fisiológica o aumento de 2,3-DPG oferece?",
+          "alternativas": [
+            "Aumenta a afinidade da hemoglobina pelos pulmões",
+            "Facilita a liberação de oxigênio nos tecidos deslocando a curva para a direita",
+            "Reduz a necessidade de hiperventilação",
+            "Melhora diretamente a absorção de oxigênio nos alvéolos"
+          ],
+          "correta": 1,
+          "explicacao": "O 2,3-DPG desloca a curva para a direita, reduzindo a afinidade pelo oxigênio. A captação pulmonar piora ligeiramente, mas a liberação tecidual melhora, compensando a hipóxia. A PaO2 não aumenta."
+        },
+        {
+          "enunciado": "Um paciente no pós-operatório de cirurgia abdominal apresenta hipoxemia que melhora pouco com oxigênio suplementar. A espirometria mostra redução de volumes pulmonares e a tomografia, atelectasia do lobo inferior esquerdo. Qual é o mecanismo predominante da hipoxemia?",
+          "alternativas": [
+            "Hipoventilação por dor pós-operatória",
+            "Distúrbio de difusão alveolar",
+            "Baixa fração inspirada de oxigênio",
+            "Shunt pulmonar por atelectasia"
+          ],
+          "correta": 3,
+          "explicacao": "A atelectasia cria um shunt verdadeiro: sangue percorre áreas não ventiladas sem oxigenação. Diferentemente de outras causas de hipoxemia, o shunt não responde bem a oxigênio suplementar isolado porque o sangue não passa por alvéolos ventilados. Manobras de recrutamento alveolar são necessárias."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Padrões de herança mendeliana e heredogramas",
+      "nivel": 1,
+      "disciplina": "Genética",
+      "descricao": "Reconhecimento de padrões mendelianos de herança, análise de heredogramas simples e cálculo de probabilidades genéticas.",
+      "questoes": [
+        {
+          "enunciado": "Um casal não afetado tem dois filhos afetados pela mesma doença rara. Qual padrão de herança explica isso?",
+          "alternativas": [
+            "Herança ligada ao X recessiva",
+            "Herança mitocondrial",
+            "Herança autossômica recessiva",
+            "Herança autossômica dominante"
+          ],
+          "correta": 2,
+          "explicacao": "Pais não afetados com filhos afetados indica ambos os pais são portadores. Isso é típico de herança autossômica recessiva. Herança ligada ao X recessiva não afetaria filhas de pai não afetado e mãe não afetada clinicamente."
+        },
+        {
+          "enunciado": "Uma mãe portadora de hemofilia (não afetada) tem um filho varão afetado. Qual padrão de herança?",
+          "alternativas": [
+            "Herança autossômica dominante",
+            "Herança ligada ao X recessiva",
+            "Herança autossômica recessiva",
+            "Herança autossômica com penetrância variável"
+          ],
+          "correta": 1,
+          "explicacao": "Mãe heterozigota transmite o alelo recessivo para seu filho varão, que se manifesta porque possui apenas um cromossomo X. Mulheres precisam de dois alelos recessivos para expressar, enquanto homens precisam de apenas um."
+        },
+        {
+          "enunciado": "Em uma doença autossômica recessiva, um indivíduo é portador mas não afetado. Qual seu genótipo?",
+          "alternativas": [
+            "AA",
+            "A_",
+            "aa",
+            "Aa"
+          ],
+          "correta": 3,
+          "explicacao": "Portador significa heterozigoto: possui um alelo normal que mascara o recessivo, então o fenótipo é normal. Se fosse aa, seria afetado. AA seria homozigoto normal."
+        },
+        {
+          "enunciado": "Um heredograma mostra um pai afetado por uma doença, sua filha não afetada, e o neto (filho da filha) afetado pela mesma doença. Qual padrão é improvável?",
+          "alternativas": [
+            "Herança ligada ao Y",
+            "Herança ligada ao X recessiva",
+            "Herança autossômica recessiva",
+            "Herança autossômica dominante"
+          ],
+          "correta": 0,
+          "explicacao": "Herança ligada ao Y passa apenas de pai para filho varão. Como o pai afetado teve uma filha não afetada, o padrão ligado ao Y é impossível. Os outros padrões conseguem explicar a transmissão através da filha para o neto."
+        },
+        {
+          "enunciado": "Um casal, ambos heterozigoto para um traço autossômico recessivo, tem uma criança. Qual a probabilidade de ela ser afetada?",
+          "alternativas": [
+            "50%",
+            "100%",
+            "25%",
+            "75%"
+          ],
+          "correta": 2,
+          "explicacao": "Cruzamento Aa × Aa produz: 25% AA (normal), 50% Aa (portador), 25% aa (afetado). Apenas aa expressa a doença recessiva."
+        },
+        {
+          "enunciado": "Uma criança expressa um fenótipo que nenhum de seus pais manifesta, porém ambos carregam o alelo para essa condição. Qual tipo de herança explica melhor esse padrão?",
+          "alternativas": [
+            "Ligada ao Y",
+            "Autossômica recessiva",
+            "Ligada ao X dominante",
+            "Autossômica dominante"
+          ],
+          "correta": 1,
+          "explicacao": "Pais portadores podem ter filhos afetados sem mostrar o fenótipo. Em herança dominante, o fenótipo se manifesta em heterozigoto."
+        },
+        {
+          "enunciado": "Em um heredograma com herança autossômica recessiva, uma mulher não afetada tem um irmão afetado. Qual a probabilidade de ela ser portadora?",
+          "alternativas": [
+            "100%",
+            "50%",
+            "25%",
+            "66%"
+          ],
+          "correta": 3,
+          "explicacao": "Como ambos os pais são portadores, a mulher não afetada pode ser AA ou Aa. Entre os não afetados, dois terços são Aa e um terço são AA, resultando em 66% de probabilidade de ser portadora."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Doenças genéticas comuns",
+      "nivel": 2,
+      "disciplina": "Genética",
+      "descricao": "Aplicação dos mecanismos genéticos e moleculares de fibrose cística, anemia falciforme e síndrome de Down em situações clínicas.",
+      "questoes": [
+        {
+          "enunciado": "Menino de 4 anos com tosse crônica produtiva, deficiência de ganho de peso e múltiplos episódios de infecção respiratória desde os primeiros meses de vida. O teste do suor confirma o diagnóstico de fibrose cística. Qual é o defeito molecular primário nessa doença?",
+          "alternativas": [
+            "Mutação no gene CFTR causando disfunção do transporte de cloro e acúmulo de muco viscoso",
+            "Deleção do cromossomo 21 levando a produtos gênicos desbalanceados",
+            "Mutação no gene β-globina causando polimerização de hemoglobina",
+            "Expansão de trinucleotídeos em região não codificadora do cromossomo X"
+          ],
+          "correta": 0,
+          "explicacao": "A fibrose cística resulta de mutações no gene CFTR que codifica um canal de cloro. Quando mutado, o transporte de cloro é prejudicado, causando muco espesso nas vias aéreas que favorece infecções recorrentes. Deleções cromossômicas, mutações em β-globina e expansões de trinucleotídeos caracterizam outras doenças genéticas."
+        },
+        {
+          "enunciado": "Adolescente afrodescendente com história de episódios recorrentes de dor óssea desde a infância. Durante exame físico, observam-se cicatrizes nas pernas e icterícia. Qual mecanismo fisiopatológico explica a hemólise nesse paciente?",
+          "alternativas": [
+            "Defeito estrutural na membrana eritrocitária por perda de proteínas de ancoragem",
+            "Polimerização de hemoglobina anormal sob baixa tensão de oxigênio, causando rigidez celular",
+            "Bloqueio de síntese de hemoglobina por mutação no promotor do gene β-globina",
+            "Autoaglutinação de hemácias mediada por anticorpos IgM contra antígenos de superfície"
+          ],
+          "correta": 1,
+          "explicacao": "Na anemia falciforme, hemoglobina S polimeriza sob baixa tensão de oxigênio, deformando hemácias em foice. Essas células rígidas são destruídas no baço, causando hemólise crônica. A icterícia resulta de aumento de bilirrubina não conjugada, e as cicatrizes refletem isquemia tissular em crises vaso-oclusivas prévias."
+        },
+        {
+          "enunciado": "Gestante em pré-natal realiza triagem bioquímica que mostra baixa alfafetoproteína, baixo estriol não conjugado e elevada beta-hCG. Qual síndrome cromossômica essa combinação sugere?",
+          "alternativas": [
+            "Síndrome de Turner",
+            "Síndrome de Williams",
+            "Síndrome de Down",
+            "Síndrome de Marfan"
+          ],
+          "correta": 2,
+          "explicacao": "A tríade bioquímica de baixa alfafetoproteína, baixo estriol não conjugado e elevada beta-hCG é padrão da síndrome de Down na triagem pré-natal. Síndromes de Turner, Marfan e Williams não apresentam esse padrão específico ou não possuem marcadores bioquímicos definidos em rastreamento gestacional."
+        },
+        {
+          "enunciado": "Homem de 25 anos com fibrose cística apresenta tosse produtiva, desnutrição leve e oscilações em testes de função pulmonar. Qual é a principal razão pela qual as infecções respiratórias recorrentes ocorrem nessa doença?",
+          "alternativas": [
+            "Imunodeficiência congênita por aplasia do timo",
+            "Deficiência de fagócitos e comprometimento da cascata complemento",
+            "Muco viscoso que cria ambiente favorável para colonização bacteriana",
+            "Hipersensibilidade a lipopolissacarídeos de bactérias Gram-negativas"
+          ],
+          "correta": 2,
+          "explicacao": "O muco espesso em fibrose cística impede a depuração mucociliar normal, permitindo colonização bacteriana. A imunidade celular e humoral funcionam adequadamente nesses pacientes. A suscetibilidade a infecções não resulta de imunodeficiência, mas do ambiente criado pelo muco viscoso."
+        },
+        {
+          "enunciado": "Casal onde o homem é portador do traço falciforme e a mulher tem hemoglobina normal deseja conhecer o risco de ter um filho com anemia falciforme. Qual é esse risco?",
+          "alternativas": [
+            "0 por cento, pois apenas um progenitor é heterozigoto",
+            "100 por cento, pois o traço é manifestação incompleta da doença",
+            "50 por cento, pois o pai pode transmitir A ou S com igual probabilidade",
+            "25 por cento, pois cada filho herdará A do pai ou S da mãe"
+          ],
+          "correta": 0,
+          "explicacao": "Quando um progenitor é heterozigoto e o outro é homozigoto normal, os filhos podem ser homozigotos normais ou heterozigotos. Nenhuma criança será homozigota afetada. A anemia falciforme requer alelos S de ambos os pais e segue herança autossômica recessiva."
+        },
+        {
+          "enunciado": "Criança com síndrome de Down realiza avaliação cardiológica aos 2 anos de idade. Qual é a cardiopatia congênita mais frequentemente associada à síndrome de Down?",
+          "alternativas": [
+            "Tetralogia de Fallot",
+            "Defeito do septo atrioventricular",
+            "Coarctação de aorta",
+            "Transposição dos grandes vasos"
+          ],
+          "correta": 1,
+          "explicacao": "O defeito do septo atrioventricular é a cardiopatia mais frequente na síndrome de Down: falha na fusão dos coxins endocárdicos, com comunicação entre átrios e ventrículos. Tetralogia de Fallot também é mais comum nessa síndrome, mas vem depois; coarctação e transposição não têm associação particular."
+        },
+        {
+          "enunciado": "Neonato com diagnóstico pré-natal de fibrose cística apresenta ao nascimento pâncreas normal em ultrassom, mas desenvolve insuficiência pancreática exócrina aos 3 meses de idade. Qual mecanismo explica a autodestruição progressiva do pâncreas?",
+          "alternativas": [
+            "Inflamação crônica por infecção repetida de Pseudomonas aeruginosa",
+            "Mutação específica no gene CFTR que danifica células acinares",
+            "Obstrução ductal pancreática por muco que impede drenagem de enzimas",
+            "Deficiência de bicarbonato que reduz a secreção pancreática basal"
+          ],
+          "correta": 2,
+          "explicacao": "O defeito no CFTR afeta não apenas vias aéreas mas também ductos pancreáticos. Muco espesso retém enzimas digestivas nos ácinos, causando lesão progressiva por autólise. O pâncreas pode estar relativamente normal ao nascer, mas a destruição se intensifica nos primeiros meses pela retenção crônica de enzimas."
+        },
+        {
+          "enunciado": "Adolescente de 17 anos com anemia falciforme, durante uma crise vaso-oclusiva, passa a apresentar dor torácica e depois dispneia progressiva. Qual complicação essa apresentação sugere?",
+          "alternativas": [
+            "Embolia pulmonar por trombose venosa associada à imobilização da crise",
+            "Pneumonia bacteriana por Streptococcus pneumoniae da asplenia funcional",
+            "Edema pulmonar agudo por cardiomiopatia falcêmica e insuficiência cardíaca",
+            "Síndrome torácica aguda por infarto pulmonar e sequestro de hemácias"
+          ],
+          "correta": 3,
+          "explicacao": "Síndrome torácica aguda é complicação grave que ocorre durante ou após crises vaso-oclusivas em anemia falciforme. Resulta de infarto pulmonar e sequestro de hemácias falcizadas, causando dor torácica e dispneia. Embolia pulmonar, pneumonia e insuficiência cardíaca podem ocorrer, mas síndrome torácica aguda é específica dessa doença."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Tecido epitelial e conjuntivo",
+      "nivel": 1,
+      "disciplina": "Histologia",
+      "descricao": "Reconhecimento de epitélios, classificação, estrutura do tecido conjuntivo, células e componentes da matriz extracelular. Questões sobre características histológicas e localização de tecidos.",
+      "questoes": [
+        {
+          "enunciado": "Um epitélio com uma única camada de células cilíndricas com núcleos basalmente localizados é encontrado no intestino delgado. Como se classifica esse epitélio?",
+          "alternativas": [
+            "Epitélio simples cúbico",
+            "Epitélio simples cilíndrico",
+            "Epitélio estratificado cilíndrico",
+            "Epitélio pseudoestratificado cilíndrico"
+          ],
+          "correta": 1,
+          "explicacao": "O epitélio simples cilíndrico possui uma única camada de células colunares com núcleo na base, típico de órgãos de absorção como intestino delgado. O epitélio pseudoestratificado aparenta múltiplas camadas mas todas as células tocam a membrana basal, diferente do simples cilíndrico genuíno."
+        },
+        {
+          "enunciado": "A boca possui um epitélio que oferece proteção mecânica contra atrito, mantendo múltiplas camadas de células vivas. Qual tipo de epitélio reveste esse órgão?",
+          "alternativas": [
+            "Epitélio simples cilíndrico",
+            "Epitélio simples escamoso",
+            "Epitélio estratificado pavimentoso não queratinizado",
+            "Epitélio simples cúbico"
+          ],
+          "correta": 2,
+          "explicacao": "A cavidade oral é revestida por epitélio estratificado pavimentoso não queratinizado, com múltiplas camadas que permitem regeneração contínua e proteção contra abrasão. O epitélio simples não ofereceria proteção suficiente para uma área de atrito constante."
+        },
+        {
+          "enunciado": "O tecido conjuntivo apresenta várias funções importantes no organismo. Qual das alternativas representa uma função principal deste tecido?",
+          "alternativas": [
+            "Secretar hormônios e controlar atividades corporais",
+            "Sustentar, proteger e conectar outros tecidos",
+            "Conduzir impulsos nervosos e processar informações",
+            "Realizar contrações e gerar movimento"
+          ],
+          "correta": 1,
+          "explicacao": "O tecido conjuntivo oferece suporte estrutural aos órgãos, protege tecidos delicados e conecta diferentes estruturas corporais. As demais funções pertencem respectivamente aos tecidos endócrino, nervoso e muscular."
+        },
+        {
+          "enunciado": "Ao observar uma lâmina de tecido conjuntivo, o patologista identifica células grandes com uma única gotícula lipídica que empurra o núcleo para a periferia. Qual é o nome dessas células?",
+          "alternativas": [
+            "Mastócitos",
+            "Adipócitos",
+            "Condrócitos",
+            "Macrófagos"
+          ],
+          "correta": 1,
+          "explicacao": "Os adipócitos são células especializadas na estocagem de triglicerídeos, apresentando gotículas lipídicas características. Mastócitos contêm grânulos de heparina, condrócitos produzem matriz cartilaginosa e macrófagos realizam fagocitose."
+        },
+        {
+          "enunciado": "O epitélio estratificado pavimentoso queratinizado da epiderme possui camadas com características morfológicas distintas. A camada mais superficial recebe qual denominação?",
+          "alternativas": [
+            "Estrato basal",
+            "Estrato espinhoso",
+            "Estrato granuloso",
+            "Estrato córneo"
+          ],
+          "correta": 3,
+          "explicacao": "O estrato córneo é a camada mais externa do epitélio estratificado pavimentoso queratinizado, formada por células mortas descamadas. O estrato basal é a camada mais profunda onde ocorrem as mitoses, e os demais estratos ocupam posições intermediárias."
+        },
+        {
+          "enunciado": "Uma biópsia de traqueia revela células colunares em aparência de múltiplas camadas, mas todas tocam a membrana basal. Qual tipo de epitélio é este?",
+          "alternativas": [
+            "Epitélio pseudoestratificado cilíndrico",
+            "Epitélio estratificado cilíndrico",
+            "Epitélio simples escamoso",
+            "Epitélio simples cilíndrico"
+          ],
+          "correta": 0,
+          "explicacao": "O epitélio pseudoestratificado cilíndrico aparenta múltiplas camadas ao microscópio luz porque os núcleos se localizam em diferentes níveis, porém todas as células originam-se da membrana basal. O epitélio estratificado genuíno possui múltiplas camadas celulares completamente distintas."
+        },
+        {
+          "enunciado": "A matriz extracelular do tecido conjuntivo contém componentes importantes para suas propriedades biomecânicas. Qual proteína é a mais abundante na matriz?",
+          "alternativas": [
+            "Elastina",
+            "Colágeno",
+            "Glicosaminoglicano",
+            "Proteoglicano"
+          ],
+          "correta": 1,
+          "explicacao": "O colágeno representa aproximadamente 70 por cento do peso seco da matriz extracelular e confere resistência à tensão. A elastina fornece elasticidade, enquanto glicosaminoglicanos e proteoglicanos hidratam a matriz mas em menor quantidade."
+        },
+        {
+          "enunciado": "As fibras do tecido conjuntivo conferem diferentes propriedades mecânicas aos tecidos. Qual tipo de fibra é especialmente importante para a elasticidade de estruturas como ligamentos e pele?",
+          "alternativas": [
+            "Fibras de colágeno tipo I",
+            "Fibras de colágeno tipo II",
+            "Fibras elásticas",
+            "Fibras reticulares"
+          ],
+          "correta": 2,
+          "explicacao": "As fibras elásticas contêm elastina, permitindo que tecidos como pele e ligamentos se deformem e retornem à forma original. As fibras de colágeno tipo I conferem resistência mas não elasticidade, enquanto tipo II concentra-se em cartilagem."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Histologia cardiovascular e sanguínea",
+      "nivel": 2,
+      "disciplina": "Histologia",
+      "descricao": "Estrutura microscópica do coração, vasos sanguíneos e componentes do sangue em situações clínicas e fisiológicas.",
+      "questoes": [
+        {
+          "enunciado": "Ao analisar uma artéria em corte transversal, observa-se uma camada muscular lisa bem desenvolvida com células dispostas em arranjo helicoidal. Qual é a principal função dessa camada muscular na regulação do fluxo sanguíneo?",
+          "alternativas": [
+            "Absorver o impacto das ondas de pressão geradas pela sístole ventricular",
+            "Permitir o transporte ativo de nutrientes para as células endoteliais",
+            "Manter o tônus vascular e regular o calibre arterial em resposta a estímulos vasomotores",
+            "Secretar fatores de coagulação para prevenir trombose"
+          ],
+          "correta": 2,
+          "explicacao": "A camada média das artérias, composta por células musculares lisas, é responsável pela vasoconstrição e vasodilatação que regulam o fluxo sanguíneo. O arranjo helicoidal permite contração coordenada. Absorção de impacto é função elástica presente em grandes artérias, enquanto secreção de fatores de coagulação é atribuição do endotélio."
+        },
+        {
+          "enunciado": "Um paciente com endocardite infecciosa apresenta lesões nas válvulas cardíacas. A histologia mostra infiltração inflamatória na camada mais interna do coração, logo abaixo do epitélio que entra em contato com o sangue. Qual camada cardíaca está primariamente acometida?",
+          "alternativas": [
+            "Endocárdio",
+            "Miocárdio",
+            "Epicárdio",
+            "Pericárdio"
+          ],
+          "correta": 0,
+          "explicacao": "O endocárdio é a camada mais interna do coração, revestida por endotélio que entra em contato direto com o sangue e apresenta as válvulas. Infecções hematógenas se fixam com frequência nessa localização. O miocárdio está profundo ao endocárdio, enquanto epicárdio e pericárdio são camadas externas."
+        },
+        {
+          "enunciado": "Na análise de sangue periférico, identifica-se um leucócito com núcleo em forma de bastonete, granulações citoplasmáticas finas e tamanho intermediário. O paciente está com infecção bacteriana aguda. Qual é o tipo de leucócito observado?",
+          "alternativas": [
+            "Linfócito",
+            "Neutrófilo",
+            "Eosinófilo",
+            "Monócito"
+          ],
+          "correta": 1,
+          "explicacao": "Neutrófilos têm núcleo em forma de bastonete ou segmentado, granulações finas no citoplasma e representam o leucócito mais numeroso em infecções bacterianas agudas. Linfócitos têm núcleo redondo volumoso, eosinófilos apresentam granulações grandes e acidófilas, monócitos são maiores com núcleo reniforme."
+        },
+        {
+          "enunciado": "Um paciente com anemia ferropriva apresenta hemácias com diâmetro reduzido e palidez central aumentada em esfregaço de sangue. A redução do volume corpuscular médio confirma o achado histológico. Qual alteração celular justifica essa apresentação?",
+          "alternativas": [
+            "Aumento da espessura da membrana eritrocitária",
+            "Sequestro de hemoglobina nos grânulos citoplasmáticos",
+            "Aumento da fragilidade osmótica das hemácias",
+            "Redução da síntese de hemoglobina por cada célula"
+          ],
+          "correta": 3,
+          "explicacao": "A palidez central aumentada resulta de menor concentração de hemoglobina por hemácia. Na anemia ferropriva, o ferro necessário para síntese de hemoglobina está reduzido, gerando hemácias menores e pálidas. As outras opções não explicam o padrão histológico observado."
+        },
+        {
+          "enunciado": "Um capilar sanguíneo no sistema nervoso central é analisado sob microscopia eletrônica. Observa-se célula endotelial única, não fenestrada, com organelas escassas e lâmina basal intacta. Qual estrutura endotelial permite o efeito de barreira hemato-encefálica?",
+          "alternativas": [
+            "Junções oclusivas entre células endoteliais",
+            "Presença de pericitos envolvendo a parede vascular",
+            "Aumento da permeabilidade através de vesículas de pinocitose",
+            "Fenestras especializadas que filtram macromoléculas"
+          ],
+          "correta": 0,
+          "explicacao": "As junções oclusivas (tight junctions) entre células endoteliais do SNC impedem a passagem paracelular de substâncias, criando a barreira hemato-encefálica. Pericitos oferecem suporte estrutural mas não criam barreira. Vesículas aumentariam permeabilidade, e capilares do SNC carecem de fenestras."
+        },
+        {
+          "enunciado": "Um coração é analisado à microscopia, revelando miofilamentos organizados em sarcômeros com discos Z, bandas A e I bem definidas. As células cardíacas mostram ramificações e estão interconectadas por estruturas que permitem passagem de íons durante a contração. Qual diferença estrutural do miocárdio explica a sincronização da contração ventricular?",
+          "alternativas": [
+            "O miocárdio contém somente miofilamentos de actina",
+            "Os discos intercalares permitem a condução rápida de despolarização entre os cardiomiócitos",
+            "O miocárdio possui maior quantidade de mitocôndrias, aumentando a síntese de ATP",
+            "As fibras cardíacas estão orientadas longitudinalmente, sem ramificações"
+          ],
+          "correta": 1,
+          "explicacao": "Os discos intercalares contêm desmossomos, que prendem uma célula à outra, e junções comunicantes, que deixam os íons passar e despolarizam os cardiomiócitos de forma coordenada. Mais mitocôndrias explicam resistência à fadiga, não sincronia; as fibras cardíacas são ramificadas."
+        },
+        {
+          "enunciado": "Na hemostasia primária, as plaquetas aderem ao colágeno do subendotélio exposto pela lesão e formam o tampão plaquetário. Qual estrutura é responsável por essa adesão inicial?",
+          "alternativas": [
+            "Presença de glicocálice aniônico na membrana plasmática",
+            "Concentração de miosina no citoesqueleto para contração",
+            "Expressão de glicoproteína Ib na superfície, que se liga ao fator von Willebrand",
+            "Síntese de integrina nos ribossomos plaquetários"
+          ],
+          "correta": 2,
+          "explicacao": "A glicoproteína Ib na membrana das plaquetas liga-se ao fator de von Willebrand, que por sua vez se liga ao colágeno subendotelial exposto. Esta é a interação inicial de adesão. Glicocálice não media adesão específica, miosina atua em contração, e plaquetas carecem de ribossomos."
+        },
+        {
+          "enunciado": "Ao comparar um corte histológico de veia e artéria de mesmo calibre, observa-se que a veia possui parede mais fina, lúmen maior e túnica média menos desenvolvida. Ambas têm endotélio integro. Esta diferença estrutural relaciona-se a qual fator fisiológico?",
+          "alternativas": [
+            "A presença de fenestras no endotélio venoso",
+            "A menor viscosidade do sangue venoso",
+            "A ausência de colágeno na adventícia venosa",
+            "O transporte de sangue sob pressão menor e dependência da compressão muscular esquelética"
+          ],
+          "correta": 3,
+          "explicacao": "As veias transportam sangue sob pressão baixa, não necessitando de túnica média muscular bem desenvolvida. Sua complacência permite armazenar sangue e depender da compressão muscular esquelética para retorno. Fenestras não existem em veias, sangue venoso não é menos viscoso, e colágeno existe em ambas."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Anamnese: Queixa Principal e Sinais de Alarme",
+      "nivel": 1,
+      "disciplina": "Semiologia",
+      "descricao": "Reconhecimento de elementos essenciais na coleta de queixa principal e identificação de sinais de alarme na anamnese inicial.",
+      "questoes": [
+        {
+          "enunciado": "Paciente de 52 anos procura o consultório relatando dor no peito que começou há duas horas durante o trabalho. Qual elemento da queixa principal você está coletando quando pergunta sobre o início e duração do sintoma?",
+          "alternativas": [
+            "Intensidade e localização",
+            "Cronologia do evento",
+            "Fatores de piora e melhora",
+            "Características qualitativas da dor"
+          ],
+          "correta": 1,
+          "explicacao": "A cronologia abrange quando o sintoma começou, quanto tempo persiste e como evoluiu. Indagar sobre início há duas horas e duração até o momento atual documenta o período do evento, informação crítica para diagnóstico diferencial."
+        },
+        {
+          "enunciado": "Uma mulher relata tosse produtiva há três semanas, afebril, sem dispneia, sem hemoptise. Qual aspecto a anamnese NÃO explorou adequadamente neste relato?",
+          "alternativas": [
+            "O caráter das secreções expectoradas",
+            "O contexto epidemiológico e exposições",
+            "A data exata do início do sintoma",
+            "Os gânglios linfáticos acometidos"
+          ],
+          "correta": 3,
+          "explicacao": "Gânglios linfáticos são achados ao exame físico, não à anamnese. A queixa principal devia explorar o aspecto da secreção, duração, contexto de exposições, fatores de piora, tosse noturna e impacto funcional, mas jamais estruturas palpáveis."
+        },
+        {
+          "enunciado": "Paciente com dor abdominal de uma semana refere que a dor piora com a alimentação e melhora com antiácido. Qual componente do roteiro da queixa principal você está documentando?",
+          "alternativas": [
+            "Irradiação da dor",
+            "Fatores associados de melhora e piora",
+            "Início e duração",
+            "Frequência de ocorrência"
+          ],
+          "correta": 1,
+          "explicacao": "Fatores de piora e melhora exploram as circunstâncias que modificam o sintoma. Alimentação piora, antiácido melhora são exemplos de contextos funcionais que guiam o diagnóstico diferencial."
+        },
+        {
+          "enunciado": "Homem de 68 anos com tosse produtiva há três dias, febre de 39,5°C e dispneia aos esforços. Qual achado representa um sinal de alarme que justifica avaliação urgente?",
+          "alternativas": [
+            "Tosse com três dias de evolução",
+            "Febre associada a dispneia",
+            "Produção de secreção nas vias aéreas",
+            "Idade acima de 60 anos"
+          ],
+          "correta": 1,
+          "explicacao": "Febre alta com dispneia, num homem de 68 anos, sugere pneumonia com repercussão respiratória e pede avaliação no mesmo dia. Tosse de três dias, secreção ou a idade, isoladas, não têm o mesmo peso; é a combinação que alarma."
+        },
+        {
+          "enunciado": "Durante a anamnese de uma criança com dor abdominal, o pai descreve a dor como periumbilical, em cólica, e conta que ela caiu na rua duas horas antes. Qual informação complementar é mais importante para afastar um sinal de alarme?",
+          "alternativas": [
+            "O consumo alimentar anterior à queda",
+            "A presença de vômitos ou alteração do trânsito intestinal",
+            "O tempo exato da queda em minutos",
+            "O tipo de roupa que a criança vestia"
+          ],
+          "correta": 1,
+          "explicacao": "Vômitos e alteração do trânsito intestinal, especialmente após trauma abdominal, sugerem obstrução ou sangramento, sinais de alarme que requerem intervenção urgente. Consumo alimentar, hora exata e vestuário não modificam a urgência diagnóstica."
+        },
+        {
+          "enunciado": "Mulher relata palpitações com taquicardia aos esforços há uma semana. Qual pergunta investigaria um sinal de alarme potencial?",
+          "alternativas": [
+            "Quantas vezes por dia você sente palpitações?",
+            "Houve sincope, tontura ou dor no peito associados?",
+            "Qual é sua frequência cardíaca em repouso?",
+            "Você já teve palpitações no passado?"
+          ],
+          "correta": 1,
+          "explicacao": "Sincope, tontura e dor no peito são sinais de alarme quando associados a palpitações, sugerindo arritmia com repercussão hemodinâmica. Frequência de episódios, história prévia ou frequência cardíaca basal não indicam gravidade imediata."
+        },
+        {
+          "enunciado": "Paciente relata cefaleia frontal há dois dias, intensidade 7/10, pior ao amanhecer, acompanhada de fotofobia e rigidez de nuca. Qual sinal de alarme está presente?",
+          "alternativas": [
+            "Intensidade elevada da dor",
+            "Localização frontal da cefaleia",
+            "Tríade de achados sugestivos de meningite",
+            "Duração de dois dias"
+          ],
+          "correta": 2,
+          "explicacao": "A combinação de cefaleia, fotofobia e rigidez de nuca (tríade clássica) é sinal de alarme para meningite. Nenhum desses achados isoladamente justificaria a mesma urgência; a simultaneidade deles demanda avaliação imediata."
+        },
+        {
+          "enunciado": "Durante a anamnese de queixa principal, qual estrutura de questionamento permite avaliar TODAS as características relevantes do sintoma de forma organizada?",
+          "alternativas": [
+            "Pergunta aberta inicial, seguida de perguntas direcionadas sobre cronologia, localização, intensidade e fatores modificadores",
+            "Perguntas fechadas sucessivas sobre cada sistema orgânico",
+            "Enumeração rápida de diagnósticos diferenciais antes de explorar o sintoma",
+            "Questionário padronizado que o paciente responde por escrito"
+          ],
+          "correta": 0,
+          "explicacao": "O roteiro organizado começa com abertura ao paciente para narração livre, depois aplica investigação dirigida sobre localização, duração, qualidade, irradiação, presença de sinais associados e fatores de melhora/piora. Perguntas fechadas prematuras perdem informações; diagnósticos presumidos distorcem a coleta."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "Exame físico do tórax",
+      "nivel": 2,
+      "disciplina": "Semiologia",
+      "descricao": "Reconheça os achados clássicos de consolidação, derrame pleural, pneumotórax e asma através de inspeção, palpação, percussão e ausculta.",
+      "questoes": [
+        {
+          "enunciado": "Paciente com pneumonia bacteriana apresenta ao exame fisico macicez à percussão, ausculta com estertores crepitantes finos e frêmito tátil aumentado na base do hemitórax esquerdo. Qual achado explica a presença dos estertores crepitantes?",
+          "alternativas": [
+            "Colapso alveolar durante a inspiração",
+            "Preenchimento alveolar por exsudato inflamatório",
+            "Espessamento pleural visceral",
+            "Movimento paradoxal da parede torácica"
+          ],
+          "correta": 1,
+          "explicacao": "Os estertores crepitantes ocorrem quando os alvéolos preenchidos por exsudato inflamatório abrem-se abruptamente durante a inspiração. O frêmito aumentado também reflete a consolidação, pois o tecido consolidado transmite melhor as vibrações vocais."
+        },
+        {
+          "enunciado": "Mulher com insuficiência cardíaca apresenta derrame pleural bilateral, maior à direita. Nesse hemitórax, a percussão revela macicez e a ausculta mostra murmúrio vesicular muito diminuído. Qual achado palpatório é esperado?",
+          "alternativas": [
+            "Estertores crepitantes disseminados",
+            "Frêmito tátil aumentado",
+            "Redução do frêmito tátil",
+            "Sibilos durante a inspiração"
+          ],
+          "correta": 2,
+          "explicacao": "O líquido pleural interpõe-se entre a pleura visceral e a parede torácica, reduzindo a transmissão de vibrações vocais e do murmúrio vesicular. Esse mecanismo diferencia o derrame da consolidação, onde o frêmito aumenta."
+        },
+        {
+          "enunciado": "Homem jovem com pneumotórax espontâneo apresenta ao exame percussão com som hipertimpânico no ápex do hemitórax direito. Qual mecanismo explica este achado percussório?",
+          "alternativas": [
+            "Preenchimento alveolar reduz a ressonância",
+            "Ausência de tecido pulmonar aumenta a ressonância do ar",
+            "Espessamento pleural aumenta a ressonância",
+            "Consolidação focal eleva a frequência ressonante"
+          ],
+          "correta": 1,
+          "explicacao": "No pneumotórax, ar acumula no espaço pleural, não no pulmão. Quando o percussor bate sobre a parede torácica, soa mais agudo e ressonante porque não há tecido pulmonar interposto. Este som hipertimpânico é típico do pneumotórax."
+        },
+        {
+          "enunciado": "Dois pacientes apresentam macicez à percussão em base de hemitórax direito. O primeiro tem pneumonia (consolidação) e o segundo tem derrame pleural. Ao comparar o frêmito tátil nos dois casos, qual padrão é esperado?",
+          "alternativas": [
+            "Ambos com frêmito aumentado",
+            "Consolidação com frêmito aumentado e derrame com frêmito reduzido",
+            "Ambos com frêmito reduzido",
+            "Consolidação com frêmito reduzido e derrame com frêmito aumentado"
+          ],
+          "correta": 1,
+          "explicacao": "Na consolidação, o tecido inflamado transmite melhor as vibrações vocais, aumentando o frêmito. No derrame, o líquido pleural reduz significativamente a transmissão de vibrações. Essa diferença ajuda a distinguir as duas condições."
+        },
+        {
+          "enunciado": "Dois pacientes têm murmúrio vesicular diminuído no ápice direito: um com pneumotórax (hipertimpanismo à percussão), outro com consolidação (macicez). Qual achado auscultatório diferencia as duas condições?",
+          "alternativas": [
+            "Presença de estertores crepitantes na consolidação",
+            "Ausência de murmúrio vesicular em ambas",
+            "Sibilos audíveis apenas no pneumotórax",
+            "Frêmito aumentado apenas no pneumotórax"
+          ],
+          "correta": 0,
+          "explicacao": "Os estertores crepitantes são típicos de consolidação, refletindo a reabertura de alvéolos preenchidos. No pneumotórax, os sons respiratórios simplesmente diminuem ou desaparecem sem produzir ruídos adicionais. Esse achado auscultatório é um diferencial importante entre as duas condições."
+        },
+        {
+          "enunciado": "Paciente com derrame pleural volumoso apresenta ao exame diminuição do murmúrio vesicular e ausência de frêmito tátil na área de macicez. Qual achado auscultatório adicional pode estar presente acima da área de derrame?",
+          "alternativas": [
+            "Broncofonia aumentada",
+            "Som de atrito pleural",
+            "Estertores crepitantes finos",
+            "Egofonia"
+          ],
+          "correta": 3,
+          "explicacao": "Logo acima do derrame, o pulmão comprimido pelo líquido fica parcialmente atelectasiado e transmite a voz como um tecido consolidado: o \"i\" falado soa como \"ê\" (egofonia). Atrito pleural e estertores não fazem parte do derrame em si; broncofonia aumentada é achado de consolidação."
+        },
+        {
+          "enunciado": "Criança durante crise asmática apresenta tiragem intercostal, retração xifoidiana e uso de musculatura acessória durante a inspiração. Qual mecanismo explica a necessidade de aumento do trabalho respiratório nesta situação?",
+          "alternativas": [
+            "Redução da complacência pulmonar por edema",
+            "Aumento da resistência ao fluxo aéreo pelas pequenas vias",
+            "Colapso de segmento lobar",
+            "Acúmulo de ar extrapleural"
+          ],
+          "correta": 1,
+          "explicacao": "A obstrução brônquica na asma aumenta significativamente a resistência ao fluxo aéreo. Para vencer essa resistência, os músculos inspiratórios precisam gerar pressões mais negativas, levando ao recrutamento de musculatura acessória e à tiragem visível."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "SUS: princípios, atenção primária e ESF",
+      "nivel": 1,
+      "disciplina": "Saúde Coletiva",
+      "descricao": "Reconhecimento de conceitos fundamentais sobre princípios do SUS, estrutura da atenção primária e características da Estratégia Saúde da Família.",
+      "questoes": [
+        {
+          "enunciado": "Um paciente procura a unidade básica de saúde sem apresentar documento de trabalho ou comprovante de renda. Qual princípio do SUS fundamenta seu direito ao atendimento?",
+          "alternativas": [
+            "Universalidade",
+            "Seletividade",
+            "Contribuição proporcional",
+            "Atendimento excludente"
+          ],
+          "correta": 0,
+          "explicacao": "O SUS é universal, garantindo acesso sem discriminação por condição econômica ou trabalhista. A seletividade restringe acesso a grupos específicos, oposto ao princípio fundamental do SUS."
+        },
+        {
+          "enunciado": "A Estratégia Saúde da Família reorganiza a atenção primária adotando qual abordagem no cuidado?",
+          "alternativas": [
+            "Essencialmente curativa e pontual",
+            "Territorial com trabalho em equipe multidisciplinar",
+            "Focada exclusivamente em diagnósticos clínicos",
+            "Centrada na necessidade de hospitalização"
+          ],
+          "correta": 1,
+          "explicacao": "A ESF reorganiza a atenção primária em torno de equipes multidisciplinares responsáveis por territórios definidos. A abordagem essencialmente curativa caracteriza modelos anteriores focados em tratamento pontual."
+        },
+        {
+          "enunciado": "Um Agente Comunitário realiza visita domiciliar e orienta uma gestante sobre vacinação, pré-natal e higiene. Qual é o papel principal do ACS nessa situação?",
+          "alternativas": [
+            "Realizar diagnósticos clínicos",
+            "Prescrever medicamentos",
+            "Ser elo entre comunidade e serviço de saúde",
+            "Substituir o atendimento médico"
+          ],
+          "correta": 2,
+          "explicacao": "O Agente Comunitário facilita comunicação entre comunidade e sistema de saúde, realizando ações educativas e de prevenção. Diagnosticar e prescrever são competências de profissionais de nível superior."
+        },
+        {
+          "enunciado": "Uma criança com infecção respiratória é atendida na unidade básica, recebe tratamento, encaminhamento para especialista se necessário e acompanhamento após recuperação. Qual princípio do SUS orienta essa forma de cuidado?",
+          "alternativas": [
+            "Seletividade",
+            "Restritividade",
+            "Integralidade",
+            "Fragmentação"
+          ],
+          "correta": 2,
+          "explicacao": "A integralidade significa atender o usuário em todos os níveis de atenção, desde prevenção até acompanhamento pós-tratamento. A fragmentação quebra essa continuidade, deixando o paciente sem seguimento."
+        },
+        {
+          "enunciado": "Um paciente chega à unidade de saúde com dor torácica e diabetes. A equipe realiza anamnese, exame físico, eletrocardiograma, solicita exames e encaminha para especialista se necessário. Esse atendimento ocorre no nível da atenção primária?",
+          "alternativas": [
+            "Sim, porque a atenção primária atende toda demanda clínica",
+            "Sim, porque a atenção primária é porta de entrada mas pode encaminhar para outros níveis",
+            "Não, porque atenção primária é apenas preventiva",
+            "Não, porque atenção primária não pode solicitar exames"
+          ],
+          "correta": 1,
+          "explicacao": "A atenção primária é porta de entrada do sistema e coordena acesso aos outros níveis quando necessário. Dizer que atende tudo nega sua função de coordenação com a rede de referência."
+        },
+        {
+          "enunciado": "Uma unidade básica de saúde está estruturada em microáreas com agentes comunitários responsáveis pela mesma população. Qual conceito fundamenta essa organização?",
+          "alternativas": [
+            "Territorialização",
+            "Centralização administrativa",
+            "Pulverização de serviços",
+            "Departamentalização funcional"
+          ],
+          "correta": 0,
+          "explicacao": "A territorialização organiza a população em áreas definidas com equipes responsáveis, permitindo vínculo e conhecimento da realidade local. A centralização afasta o serviço da comunidade."
+        },
+        {
+          "enunciado": "Uma política oferece suplementação de ferro para crianças de áreas de risco nutricional e vacinação universal para todas. Qual exemplo melhor ilustra o princípio de equidade?",
+          "alternativas": [
+            "Ambos ilustram apenas universalidade",
+            "A vacinação universal",
+            "A suplementação em áreas de risco",
+            "Nenhum exemplo ilustra equidade"
+          ],
+          "correta": 2,
+          "explicacao": "A equidade reconhece diferenças e distribui recursos de forma desigual para igualdade de resultados; suplementação focada em áreas de risco exemplifica isso. Vacinação universal exemplifica universalidade."
+        },
+        {
+          "enunciado": "Qual é a composição mínima da equipe para uma Estratégia Saúde da Família cumprir seus objetivos?",
+          "alternativas": [
+            "Médicos e enfermeiros exclusivamente",
+            "Médico, enfermeiro, auxiliar ou técnico de enfermagem e agentes comunitários de saúde",
+            "Apenas agentes comunitários de saúde",
+            "Médico, psicólogo e assistente social"
+          ],
+          "correta": 1,
+          "explicacao": "Pela Política Nacional de Atenção Básica, a equipe mínima da ESF tem médico, enfermeiro, auxiliar ou técnico de enfermagem e agentes comunitários de saúde. Só médicos e enfermeiros não cobrem o vínculo territorial que os ACS fazem."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Epidemiologia básica: incidência, prevalência e vigilância",
+      "nivel": 2,
+      "disciplina": "Saúde Coletiva",
+      "descricao": "Avalia compreensão de conceitos-chave em epidemiologia, cálculo de taxas e vigilância de doenças em situações práticas.",
+      "questoes": [
+        {
+          "enunciado": "Uma cidade com 100 mil habitantes teve 500 novos casos de tuberculose em 2024. Ao final do ano, havia 1200 pessoas vivendo com tuberculose ativa. Qual foi a incidência anual de tuberculose nessa cidade?",
+          "alternativas": [
+            "1200 por 100 mil habitantes",
+            "500 por 100 mil habitantes",
+            "12 por mil habitantes",
+            "1,2% da população"
+          ],
+          "correta": 1,
+          "explicacao": "Incidência conta os casos NOVOS num período: 500 em 100 mil habitantes no ano. Os 1.200 vivendo com a doença ao fim do ano são a prevalência (1,2%, ou 12 por mil), que mistura casos antigos e novos."
+        },
+        {
+          "enunciado": "Um município implementou um sistema de vigilância em saúde para monitorar a dengue. Todos os laboratórios da rede pública devem notificar os casos confirmados ao setor de epidemiologia em até 24 horas. O gestor não realiza visitas rotineiras aos laboratórios. Qual tipo de vigilância está sendo praticado?",
+          "alternativas": [
+            "Vigilância ativa com visitas regulares aos laboratórios",
+            "Vigilância sentinela com foco em unidades selecionadas",
+            "Vigilância passiva com notificação espontânea dos laboratórios",
+            "Vigilância de base populacional sem intermediários"
+          ],
+          "correta": 2,
+          "explicacao": "A vigilância passiva depende de notificação espontânea feita pelos laboratórios sem que o gestor visite os locais. A vigilância ativa envolve o gestor ir até os locais; sentinela monitora apenas alguns pontos selecionados como representativos."
+        },
+        {
+          "enunciado": "Durante investigação de surto de intoxicação alimentar em uma escola, foram entrevistadas 200 pessoas. Dessas, 120 comeram bolo de chocolate e 80 ficaram doentes. Das 80 que não comeram bolo, 10 ficaram doentes. Qual é o risco relativo de adoecimento para quem consumiu o bolo?",
+          "alternativas": [
+            "8,0",
+            "5,3",
+            "3,2",
+            "2,5"
+          ],
+          "correta": 1,
+          "explicacao": "Risco relativo compara o risco entre expostos e não expostos. Risco em expostos = 80 dividido por 120 = 67%. Risco em não expostos = 10 dividido por 80 = 12,5%. RR = 0,67 dividido por 0,125 = 5,3. Comer o bolo aumentou 5,3 vezes o risco."
+        },
+        {
+          "enunciado": "Um estudo transversal em comunidade rural entrevistou 1000 pessoas adultas e identificou 150 com hipertensão arterial. Qual é a prevalência de hipertensão nessa comunidade?",
+          "alternativas": [
+            "1,5 por 100 pessoas",
+            "1,5%",
+            "Aproximadamente 8%",
+            "15%"
+          ],
+          "correta": 3,
+          "explicacao": "Prevalência = (número total de casos dividido pela população total) multiplicado por 100. (150 dividido por 1000) multiplicado por 100 = 15%. A prevalência inclui casos antigos e novos no mesmo momento, diferente de incidência que conta só novos."
+        },
+        {
+          "enunciado": "Uma secretaria de saúde implementou vigilância sentinela para rastreamento do vírus influenza. Apenas 10 unidades de saúde coletam amostras de todos os pacientes com síndrome gripal. Qual é a principal vantagem dessa abordagem comparada à vigilância passiva universal?",
+          "alternativas": [
+            "Maior sensibilidade para detectar todos os casos",
+            "Detecção de tendências epidemiológicas com menor custo operacional",
+            "Investigação imediata de todos os contatos de casos suspeitos",
+            "Eliminação da necessidade de investigação de surtos"
+          ],
+          "correta": 1,
+          "explicacao": "Vigilância sentinela reduz custos ao monitorar pontos estratégicos mantendo capacidade de acompanhar tendências. Não garante encontrar todos os casos (menor sensibilidade) nem substitui investigação individual. Funciona bem quando a população é grande ou dispersa."
+        },
+        {
+          "enunciado": "Um indicador de saúde regional registra 12 óbitos por mil nascidos vivos. Qual indicador está sendo avaliado?",
+          "alternativas": [
+            "Mortalidade proporcional por faixa etária",
+            "Coeficiente de mortalidade geral da região",
+            "Taxa de mortalidade materna",
+            "Taxa de mortalidade infantil"
+          ],
+          "correta": 3,
+          "explicacao": "Mortalidade infantil é expressa especificamente em óbitos por mil nascidos vivos em crianças menores de um ano. Coeficiente de mortalidade geral usa toda população como denominador; taxa materna refere-se a óbitos associados à gravidez; mortalidade proporcional usa percentuais."
+        },
+        {
+          "enunciado": "Uma empresa com 500 funcionários diagnosticou 25 casos novos de doença infectocontagiosa em 2024. Cinco funcionários já tinham a doença no início do ano. Qual foi a incidência anual?",
+          "alternativas": [
+            "5%",
+            "2%",
+            "5 por mil",
+            "10 por mil"
+          ],
+          "correta": 0,
+          "explicacao": "Incidência = novos casos dividido pela população em risco. A população em risco é a que não tinha doença no início: 500 menos 5 = 495 pessoas. Incidência = 25 dividido por 495 = aproximadamente 5%. Os casos que já existiam (prevalentes) não entram no cálculo de incidência."
+        },
+        {
+          "enunciado": "Uma região integrou vigilância de síndrome gripal, síndrome respiratória aguda severa e Covid-19 em único sistema informatizado. Quando laboratórios detectam qualquer dessas síndromes, a notificação é centralizada. Qual é o objetivo principal dessa integração?",
+          "alternativas": [
+            "Aumentar o número de laboratórios participantes da notificação",
+            "Facilitar detecção rápida de tendências e possíveis epidemias",
+            "Reduzir a quantidade de testes laboratoriais realizados",
+            "Substituir investigação epidemiológica individualizada"
+          ],
+          "correta": 1,
+          "explicacao": "Vigilância integrada permite reconhecer padrões de distribuição de várias doenças relacionadas em um único ponto, identificando tendências e sinais de alerta mais rapidamente. Não reduz testes laboratoriais necessários nem substitui investigação; aumentar participação é consequência, não objetivo."
+        }
+      ]
+    }
+  ]
+}

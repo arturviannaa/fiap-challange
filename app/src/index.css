@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0f1b33;
+  --color-soft: #5b6780;
+  --color-paper: #f6f8fc;
+  --color-line: #dbe2ee;
+  --color-azul: #2459f5;
+  --color-azul-escuro: #1a3a9e;
+  --color-azul-claro: #e5ecfe;
+  --color-volt: #ffc93d;
+  --color-ok: #16805c;
+  --color-ok-claro: #e2f4eb;
+  --color-err: #c54155;
+  --color-err-claro: #fce9ee;
+  --font-sans: "Nunito", system-ui, sans-serif;
+  --font-display: "Archivo", system-ui, sans-serif;
+}
+
+@utility btn {
+  @apply inline-flex min-h-11 items-center justify-center rounded-2xl px-5 font-extrabold transition active:translate-y-0.5 disabled:opacity-50;
+}
+@utility btn-azul {
+  @apply btn bg-azul text-white shadow-[0_4px_0_0_#1a41c2] hover:bg-azul-escuro;
+}
+@utility btn-claro {
+  @apply btn border-2 border-line bg-white text-ink hover:border-azul;
+}
+@utility card {
+  @apply rounded-[20px] border-2 border-line bg-white p-5;
+}
+@utility campo {
+  @apply mt-1 w-full rounded-2xl border-2 border-line bg-white px-4 py-3 focus:border-azul focus:outline-none;
+}

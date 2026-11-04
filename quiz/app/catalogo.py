@@ -1,6 +1,6 @@
 """Catálogo de quizzes, lido de um JSON versionado junto com o código.
 
-As 120 questões vêm do banco de questões da Anamnea: 16 quizzes, oito
+As 120 questões vêm do banco de questões da Lumna: 16 quizzes, oito
 disciplinas do ciclo básico, dois níveis cada. O gabarito fica só aqui dentro;
 o que sai para o navegador passa por `para_o_aluno`, que tira a alternativa
 correta e a explicação.

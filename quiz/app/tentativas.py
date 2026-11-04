@@ -1,4 +1,4 @@
-"""Regras de uma passagem pelo quiz, as mesmas da Anamnea.
+"""Regras de uma passagem pelo quiz, as mesmas da Lumna.
 
 - O feedback vem na hora, questão a questão.
 - A primeira resposta a cada questão é a que vale: depois de ver a explicação,
