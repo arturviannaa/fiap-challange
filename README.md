@@ -8,6 +8,71 @@ Projeto do **Challenge FIAP 2026**. É o módulo de quizzes da [Anamnea](https:/
 | [`quiz/`](quiz) | **Python 3.12** | Banco de 120 questões, correção, XP e ranking |
 | [`web/`](web) | **HTML, CSS e JS puros** | A interface, seguindo o design system da Anamnea |
 
+## Sprint 4: front em React
+
+A pasta [`app/`](app) é a versão da interface em React e Tailwind CSS, publicada na Vercel.
+
+- **Deploy na Vercel:** https://anamnea-quizzes.vercel.app
+- **Repositório:** https://github.com/arturviannaa/fiap-challange
+
+### Tecnologias
+
+React 19, React Router 7, Tailwind CSS 4 e Vite 8. Os dados vêm de uma API mockada (arquivo JSON) e o login fica no localStorage.
+
+### Instalar e rodar
+
+Precisa do Node.js 20 ou mais novo.
+
+```bash
+cd app
+npm install
+npm run dev
+```
+
+Abre em http://localhost:5173. Para gerar a versão de produção: `npm run build`.
+
+Não tem back-end para subir nem variável de ambiente nessa versão.
+
+### Usuário de teste
+
+- e-mail: `aluno@anamnea.com`
+- senha: `teste123`
+
+Também dá para criar uma conta nova em "Criar conta". Ela fica salva só no navegador.
+
+### Rotas
+
+| Rota | Tipo | Tela |
+|---|---|---|
+| `/` | pública | início |
+| `/entrar` | pública | login |
+| `/cadastro` | pública | criar conta |
+| `/quizzes` | privada | lista de quizzes com busca e filtro por disciplina |
+| `/quizzes/:id` | privada | quiz, uma questão por vez com correção na hora |
+| `/desempenho` | privada | XP, aproveitamento e histórico |
+
+As rotas privadas ficam dentro do componente `RotaPrivada`. Sem login, ele manda para `/entrar` e, depois de entrar, volta para a página que a pessoa tentou abrir.
+
+### API mockada
+
+As 120 questões estão em `app/public/api/quizzes.json`, o mesmo banco de questões do serviço em Python. O app busca esse arquivo com `fetch`, então ele se comporta como uma API: o hook `useApi` controla o carregamento, o erro (com botão de tentar de novo) e o resultado. Quando a busca ou o filtro não acham nada, aparece a mensagem de lista vazia. As questões são de conteúdo de faculdade, sem nenhum dado de paciente.
+
+Login, contas criadas e histórico ficam no localStorage do navegador.
+
+### Organização
+
+```
+app/src/
+  components/   Cabecalho, RotaPrivada, Estado, QuizCard, Formulario
+  hooks/        useApi (hook customizado da API) e useAuth (sessão)
+  pages/        Inicio, Entrar, Cadastro, Quizzes, Quiz, Desempenho, NaoEncontrada
+  api.js        leitura do JSON e do localStorage
+```
+
+### Uso de Inteligência Artificial
+
+Usamos um assistente de IA (Claude) para ajudar a passar as telas de HTML e JavaScript puro para componentes React com Tailwind, montar a estrutura de rotas e revisar o texto deste README. A equipe revisou o código, testou os fluxos no navegador e ajustou o que precisou.
+
 ## Links para teste
 
 | O quê | Link |
