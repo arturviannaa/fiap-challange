@@ -217,7 +217,7 @@ ROTAS = [
 
 def criar_manipulador(app: Aplicacao, origens_permitidas: list[str]):
     class Manipulador(BaseHTTPRequestHandler):
-        server_version = "anamnea-quiz"
+        server_version = "lumna-quiz"
         sys_version = ""
 
         def do_GET(self):

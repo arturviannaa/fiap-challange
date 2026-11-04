@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { gravarJson, lerJson } from "../api";
 
-const USUARIO_DE_TESTE = { nome: "Aluno Teste", email: "aluno@anamnea.com", senha: "teste123" };
+const USUARIO_DE_TESTE = { nome: "Aluno Teste", email: "aluno@lumna.com", senha: "teste123" };
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {

@@ -1,8 +1,8 @@
 // Token e dados do aluno logado. O localStorage pode falhar (aba anonima,
 // armazenamento bloqueado): toda leitura e escrita fica dentro de try/catch.
 
-const CHAVE_TOKEN = "anamnea.token";
-const CHAVE_USUARIO = "anamnea.usuario";
+const CHAVE_TOKEN = "lumna.token";
+const CHAVE_USUARIO = "lumna.usuario";
 
 // Sem armazenamento, a sessao dura so ate recarregar a pagina.
 let sessaoEmMemoria = null;

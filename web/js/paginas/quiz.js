@@ -158,7 +158,7 @@ function mostrarResultado(resultado) {
   $("xp-ganho").textContent = `+${resultado.xp_ganho}`;
   $("xp-total").textContent = String(resultado.xp_total);
   $("refazer").href = `quiz.html?id=${estado.quiz.id}`;
-  document.title = `Resultado · ${estado.quiz.titulo} · Anamnea`;
+  document.title = `Resultado · ${estado.quiz.titulo} · Lumna`;
   $("titulo-resultado").focus();
 }
 
@@ -194,7 +194,7 @@ async function iniciar() {
     });
     estado.tentativaId = aberta.tentativa_id;
     estado.quiz = aberta.quiz;
-    document.title = `${estado.quiz.titulo} · Anamnea`;
+    document.title = `${estado.quiz.titulo} · Lumna`;
     $("carregando").hidden = true;
     formulario.hidden = false;
     painel.hidden = false;

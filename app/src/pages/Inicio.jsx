@@ -19,7 +19,7 @@ export default function Inicio() {
           )}
         </div>
       </div>
-      <img src="/img/joinha.webp" alt="Vento, o mascote da Anamnea" className="mx-auto h-56 w-auto md:h-72" />
+      <img src="/img/joinha.webp" alt="Vento, o mascote da Lumna" className="mx-auto h-56 w-auto md:h-72" />
     </section>
   );
 }

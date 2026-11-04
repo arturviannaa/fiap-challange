@@ -1,25 +1,34 @@
-# fiap-challange · Anamnea Quizzes
+# Lumna
 
-Projeto do **Challenge FIAP 2026**. É o módulo de quizzes da [Anamnea](https://www.anamnea.com.br) separado em três serviços, cada um numa linguagem:
+Lumna é uma plataforma de quizzes para o ciclo básico de Medicina, feita para o Challenge FIAP 2026 com o Hospital Moinhos de Vento. São 16 quizzes e 120 questões de Anatomia, Bioquímica, Embriologia, Fisiologia, Genética, Histologia, Semiologia e Saúde Coletiva. O aluno responde uma questão por vez, vê a alternativa certa e a explicação na hora e soma XP.
 
-| Parte | Linguagem | O que faz |
-|---|---|---|
-| [`auth/`](auth) | **C++17** | Cadastro, login, sessão e recuperação de senha |
-| [`quiz/`](quiz) | **Python 3.12** | Banco de 120 questões, correção, XP e ranking |
-| [`web/`](web) | **HTML, CSS e JS puros** | A interface, seguindo o design system da Anamnea |
+- Deploy na Vercel: https://lumna-iota.vercel.app
+- Repositório: https://github.com/arturviannaa/fiap-challange
 
-## Sprint 4: front em React
+## Equipe
 
-A pasta [`app/`](app) é a versão da interface em React e Tailwind CSS, publicada na Vercel.
+| Nome | RM |
+|---|---|
+| Artur Figueiredo Vianna | 571866 |
+| Cassiano Rocha Assumpção | 568632 |
+| Pedro Perraro John | 573068 |
 
-- **Deploy na Vercel:** https://anamnea-quizzes.vercel.app
-- **Repositório:** https://github.com/arturviannaa/fiap-challange
+## O que tem no repositório
+
+| Pasta | O que é |
+|---|---|
+| `app/` | front em React e Tailwind (Sprint 4), publicado na Vercel |
+| `quiz/` | API de quizzes em Python: correção, XP, ranking e análises |
+| `auth/` | API de login em C++: cadastro, sessão e recuperação de senha |
+| `web/` | front da Sprint 3, em HTML, CSS e JavaScript puro |
+
+## Front em React (`app/`)
 
 ### Tecnologias
 
-React 19, React Router 7, Tailwind CSS 4 e Vite 8. Os dados vêm de uma API mockada (arquivo JSON) e o login fica no localStorage.
+React 19, React Router 7, Tailwind CSS 4 e Vite 8.
 
-### Instalar e rodar
+### Como rodar
 
 Precisa do Node.js 20 ou mais novo.
 
@@ -29,16 +38,16 @@ npm install
 npm run dev
 ```
 
-Abre em http://localhost:5173. Para gerar a versão de produção: `npm run build`.
+Abre em http://localhost:5173. Para gerar a versão de produção, use `npm run build`.
 
-Não tem back-end para subir nem variável de ambiente nessa versão.
+Essa versão não precisa de back-end rodando nem de variável de ambiente.
 
 ### Usuário de teste
 
-- e-mail: `aluno@anamnea.com`
+- e-mail: `aluno@lumna.com`
 - senha: `teste123`
 
-Também dá para criar uma conta nova em "Criar conta". Ela fica salva só no navegador.
+Dá para criar outra conta em "Criar conta". Ela fica salva só no navegador.
 
 ### Rotas
 
@@ -51,187 +60,91 @@ Também dá para criar uma conta nova em "Criar conta". Ela fica salva só no na
 | `/quizzes/:id` | privada | quiz, uma questão por vez com correção na hora |
 | `/desempenho` | privada | XP, aproveitamento e histórico |
 
-As rotas privadas ficam dentro do componente `RotaPrivada`. Sem login, ele manda para `/entrar` e, depois de entrar, volta para a página que a pessoa tentou abrir.
+As rotas privadas ficam dentro do componente `RotaPrivada`. Quem não fez login vai para `/entrar` e, depois de entrar, volta para a página que tentou abrir.
 
-### API mockada
+### Dados (API mockada)
 
-As 120 questões estão em `app/public/api/quizzes.json`, o mesmo banco de questões do serviço em Python. O app busca esse arquivo com `fetch`, então ele se comporta como uma API: o hook `useApi` controla o carregamento, o erro (com botão de tentar de novo) e o resultado. Quando a busca ou o filtro não acham nada, aparece a mensagem de lista vazia. As questões são de conteúdo de faculdade, sem nenhum dado de paciente.
+As 120 questões ficam em `app/public/api/quizzes.json`, o mesmo banco de questões da API em Python. O app busca esse arquivo com `fetch`, como se fosse uma API. O hook `useApi` cuida do carregamento, do erro (com botão para tentar de novo) e do resultado, e quando a busca ou o filtro não acham nada aparece a mensagem de lista vazia. As questões são de conteúdo de faculdade e não têm dado de paciente.
 
-Login, contas criadas e histórico ficam no localStorage do navegador.
+Login, contas criadas e histórico ficam no localStorage.
 
-### Organização
+### Pastas
 
 ```
 app/src/
   components/   Cabecalho, RotaPrivada, Estado, QuizCard, Formulario
-  hooks/        useApi (hook customizado da API) e useAuth (sessão)
+  hooks/        useApi e useAuth
   pages/        Inicio, Entrar, Cadastro, Quizzes, Quiz, Desempenho, NaoEncontrada
   api.js        leitura do JSON e do localStorage
 ```
 
-### Uso de Inteligência Artificial
+## Back-end (`quiz/` e `auth/`)
 
-Usamos um assistente de IA (Claude) para ajudar a passar as telas de HTML e JavaScript puro para componentes React com Tailwind, montar a estrutura de rotas e revisar o texto deste README. A equipe revisou o código, testou os fluxos no navegador e ajustou o que precisou.
-
-## Links para teste
-
-| O quê | Link |
-|---|---|
-| **Site** | https://challenge.pervian.tech |
-| API de autenticação (C++) | https://challenge-auth.pervian.tech/saude |
-| API de quizzes (Python) | https://challenge-quiz.pervian.tech/quizzes |
-
-Para testar: crie uma conta em https://challenge.pervian.tech/cadastro.html, faça um quiz e veja o XP em **Desempenho**. Na recuperação de senha (https://challenge.pervian.tech/recuperar-senha.html) o código de 6 dígitos aparece na própria tela, porque o ambiente da entrega roda em modo demonstração, sem servidor de e-mail.
-
-## Equipe
-
-- Artur Figueiredo Vianna
-- Cassiano Rocha Assumpção
-- Pedro Perraro John
-
-## Como funciona
-
-1. O aluno cria a conta e entra. Quem responde é o serviço em C++.
-2. Escolhe um dos 16 quizzes (oito disciplinas do ciclo básico, dois níveis cada).
-3. Responde uma questão por vez e vê a correção e a explicação na hora. A primeira resposta é a que vale; “Não sei” conta como erro.
-4. Ao concluir, soma XP: **10 por acerto e 20 de bônus** para quem acerta todas. Só a primeira conclusão do dia em cada quiz rende XP, para ninguém subir no ranking refazendo o mesmo quiz.
-5. A tela de desempenho mostra XP, aproveitamento, histórico e o ranking da turma.
-6. A mesma tela mostra o aproveitamento por disciplina (dominada a partir de 70%, atenção de 50% a 69%, revisar abaixo de 50%), o próximo quiz recomendado e as questões que a turma mais erra.
-
-As questões vêm do banco de questões da Anamnea (16 quizzes, 120 questões): Anatomia, Bioquímica, Embriologia, Fisiologia, Genética, Histologia, Semiologia e Saúde Coletiva.
-
-## Arquitetura
-
-```mermaid
-flowchart LR
-    navegador["Navegador<br/>HTML · CSS · JS"]
-    auth["auth<br/>C++17 · SQLite"]
-    quiz["quiz<br/>Python · SQLite"]
-
-    navegador -- "cadastro, login,<br/>recuperação de senha" --> auth
-    navegador -- "quizzes, respostas,<br/>desempenho" --> quiz
-    quiz -- "GET /conta/eu<br/>(quem é o token?)" --> auth
-```
-
-- O navegador guarda só o **token** de sessão e manda como `Authorization: Bearer`.
-- O serviço de quizzes não sabe nada de senha: pergunta ao `auth` quem é o dono do token (com cache de 1 minuto).
-- Cada serviço tem o próprio banco SQLite. Nenhum lê o banco do outro.
-- O gabarito nunca vai para o navegador: a correção acontece no Python, questão a questão.
-
-### Segurança da autenticação (C++)
-
-- Senha guardada com **PBKDF2-HMAC-SHA256**, 210 mil iterações e sal aleatório (OpenSSL).
-- Token de sessão com 32 bytes aleatórios, gravado no banco só como SHA-256. Vale 7 dias.
-- **Cinco senhas erradas seguidas bloqueiam o login por cinco minutos.**
-- Login com e-mail inexistente leva o mesmo tempo que com senha errada, e a mensagem é a mesma: a tela não revela quem tem conta.
-- Recuperação por **código de 6 dígitos**, válido por 15 minutos e por 5 tentativas, gravado como hash. Trocar a senha derruba todas as sessões abertas.
-- O nginx limita as rotas de conta a 10 pedidos por minuto por IP.
-
-> **Modo demonstração.** O ambiente da entrega não tem servidor de e-mail, então com `MODO_DEMO=1` o código de recuperação volta na resposta e aparece na tela. Sem essa variável, ele só é gerado.
-
-## Rodando na sua máquina
-
-Com Docker:
+O jeito mais fácil é subir tudo com Docker:
 
 ```bash
 docker compose up --build
 ```
 
-Abra http://localhost:8080. O `auth` fica em `:8092` e o `quiz` em `:8093`.
+O front da Sprint 3 abre em http://localhost:8080, o `auth` fica na porta 8092 e o `quiz` na 8093.
 
 Sem Docker, em três terminais:
 
 ```bash
-# 1. auth (precisa de g++, cmake, libssl-dev e libsqlite3-dev)
 cmake -S auth -B auth/build && cmake --build auth/build -j
-MODO_DEMO=1 ./auth/build/anamnea-auth
+MODO_DEMO=1 ./auth/build/lumna-auth
 
-# 2. quiz (só a biblioteca padrão do Python 3.12)
 cd quiz && python -m app
 
-# 3. web (qualquer servidor estático)
 python -m http.server 8080 -d web
 ```
+
+O `auth` precisa de g++, cmake, libssl-dev e libsqlite3-dev. O `quiz` usa só a biblioteca padrão do Python 3.12. Com `MODO_DEMO=1`, o código de recuperação de senha aparece na tela, porque não tem servidor de e-mail.
+
+### Regras do quiz
+
+A primeira resposta de cada questão é a que vale, e "Não sei" conta como erro. Cada acerto vale 10 XP, e quem acerta todas ganha mais 20. Só a primeira conclusão do dia em cada quiz rende XP, para ninguém subir no ranking repetindo o mesmo quiz.
+
+A API também calcula o aproveitamento por disciplina (dominada a partir de 70%, atenção de 50% a 69% e revisar abaixo de 50%), recomenda o próximo quiz e mostra as questões que a turma mais erra.
+
+### Rotas da API de quizzes
+
+| Método | Rota | Para quê |
+|---|---|---|
+| `GET` | `/quizzes?disciplina=` | lista os quizzes |
+| `GET` | `/quizzes/{id}` | um quiz, sem o gabarito |
+| `POST` | `/quizzes/{id}/tentativas` | começa uma tentativa (precisa de login) |
+| `POST` | `/tentativas/{id}/respostas` | responde uma questão e recebe a correção |
+| `POST` | `/tentativas/{id}/concluir` | fecha a tentativa e soma o XP |
+| `GET` | `/eu/resumo` | XP, aproveitamento e histórico do aluno |
+| `GET` | `/eu/analise` | aproveitamento por disciplina e próximo quiz |
+| `GET` | `/analise/questoes` | as 5 questões com menos acerto da turma |
+| `GET` | `/ranking` | as 10 pessoas com mais XP |
+
+Os erros voltam como `{"erro": "mensagem"}` com o status HTTP certo (400, 401, 404, 409, 422).
+
+### Rotas da API de login
+
+| Método | Rota | Para quê |
+|---|---|---|
+| `POST` | `/conta/cadastro` | cria a conta |
+| `POST` | `/conta/login` | devolve o token de sessão |
+| `GET` | `/conta/eu` | diz de quem é o token |
+| `POST` | `/conta/sair` | encerra a sessão |
+| `POST` | `/conta/recuperar-senha` | gera o código de 6 dígitos |
+| `POST` | `/conta/redefinir-senha` | troca a senha com o código |
+
+A senha é guardada com PBKDF2-SHA256, e cinco tentativas erradas seguidas bloqueiam o login por cinco minutos.
 
 ## Testes
 
 ```bash
-ctest --test-dir auth/build --output-on-failure   # C++: 18 casos
-cd quiz && python -m unittest -v                  # Python: 35 casos
-npx html-validate "web/*.html"                    # HTML
+cd quiz && python -m unittest -v
+ctest --test-dir auth/build --output-on-failure
 ```
 
-O GitHub Actions roda os três a cada pull request. As imagens Docker também rodam os testes no build: imagem com teste quebrado não chega a existir.
+São 35 testes no Python e 18 no C++. O GitHub Actions roda tudo a cada pull request.
 
-## API
+## Uso de Inteligência Artificial
 
-### auth (C++) — `https://challenge-auth.pervian.tech`
-
-| Método | Rota | Corpo | Resposta |
-|---|---|---|---|
-| `POST` | `/conta/cadastro` | `{nome, email, senha}` | `201 {usuario}` |
-| `POST` | `/conta/login` | `{email, senha}` | `200 {token, expira_em, usuario}` |
-| `GET` | `/conta/eu` | — (Bearer) | `200 {usuario}` |
-| `POST` | `/conta/sair` | — (Bearer) | `204` |
-| `POST` | `/conta/recuperar-senha` | `{email}` | `202 {mensagem}` |
-| `POST` | `/conta/redefinir-senha` | `{email, codigo, nova_senha}` | `200 {mensagem}` |
-| `GET` | `/saude` | — | `200 {status}` |
-
-### quiz (Python) — `https://challenge-quiz.pervian.tech`
-
-| Método | Rota | Corpo | Resposta |
-|---|---|---|---|
-| `GET` | `/quizzes?disciplina=` | — | `{disciplinas, quizzes}` |
-| `GET` | `/quizzes/{id}` | — | quiz sem o gabarito |
-| `POST` | `/quizzes/{id}/tentativas` | — (Bearer) | `201 {tentativa_id, quiz}` |
-| `POST` | `/tentativas/{id}/respostas` | `{posicao, escolha}` | `{acertou, correta, explicacao, respondidas, total}` |
-| `POST` | `/tentativas/{id}/concluir` | — (Bearer) | `{acertos, total, xp_ganho, xp_total, primeira_do_dia}` |
-| `GET` | `/eu/resumo` | — (Bearer) | XP, aproveitamento e histórico |
-| `GET` | `/ranking` | — | as 10 pessoas com mais XP |
-| `GET` | `/eu/analise` | — (Bearer) | aproveitamento por disciplina e próximo quiz recomendado |
-| `GET` | `/analise/questoes` | — | as 5 questões com menor taxa de acerto da turma (mínimo 3 respostas) |
-
-Erros saem sempre como `{"erro": "mensagem para o usuário"}`, com o status HTTP certo (`401`, `404`, `409`, `422`, `429`).
-
-## Interface
-
-HTML, CSS e JavaScript sem framework e sem etapa de build; cada página carrega só os módulos ES de que precisa.
-
-- **Design system da Anamnea:** paleta cobalto, Archivo nos títulos e Nunito no texto, botões com sombra sólida que afundam no clique, pills de escolha que ficam verdes ou vermelhas na correção e o mascote Vento reagindo às respostas. Os tokens estão em [`web/css/tokens.css`](web/css/tokens.css).
-- **Semântica:** `header`, `nav`, `main`, `section` e `footer` em todas as páginas; alternativas do quiz são `radio` dentro de `fieldset`; progresso com `<progress>`; histórico em `<table>`; números em `<dl>`; avisos com `role="alert"`.
-- **Responsiva e mobile first:** no celular a navegação vira tab bar embaixo e o painel de correção fica ao alcance do polegar; alvos de toque com pelo menos 44px.
-- **Acessível:** foco visível, link de pular para o conteúdo, foco levado ao enunciado a cada questão, `prefers-reduced-motion` respeitado.
-
-## Estrutura
-
-```
-auth/              serviço de autenticação (C++17)
-  src/             cripto, validação, banco, contas, recuperação, rotas HTTP
-  tests/           testes sem framework, rodados pelo ctest
-quiz/              serviço de quizzes (Python 3.12)
-  app/             catálogo, regras da tentativa, repositório, cliente do auth, servidor
-  dados/           quizzes.json, o banco de questões
-  tests/           unittest
-web/               interface (HTML, CSS, JS)
-  css/             tokens, base, componentes, layout e estilos por tela
-  js/              api, sessão, formulários e um módulo por página
-deploy/            nginx, compose de produção e script de deploy
-```
-
-## Deploy
-
-A VPS roda os dois serviços em containers presos ao `127.0.0.1`; o nginx do host serve o site estático e faz o proxy com HTTPS (Let's Encrypt).
-
-| Subdomínio | Aponta para |
-|---|---|
-| [`challenge.pervian.tech`](https://challenge.pervian.tech) | `web/`, estático |
-| [`challenge-auth.pervian.tech`](https://challenge-auth.pervian.tech/saude) | `auth`, porta 8092 |
-| [`challenge-quiz.pervian.tech`](https://challenge-quiz.pervian.tech/saude) | `quiz`, porta 8093 |
-
-```bash
-./deploy/deploy.sh   # atualiza /opt/fiap-challange, recompila e publica
-```
-
-## Fluxo de trabalho
-
-Cada funcionalidade nasce numa branch própria (`feat/…`, `fix/…`, `ci/…`, `docs/…`), passa pelos testes e entra na `main` por pull request revisado por outra pessoa da equipe.
+Usamos um assistente de IA (Claude) para ajudar a passar as telas de HTML e JavaScript puro para componentes React com Tailwind, montar as rotas e revisar o texto deste README. A equipe revisou o código, testou os fluxos no navegador e ajustou o que precisou.

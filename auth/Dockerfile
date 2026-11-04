@@ -17,10 +17,10 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/* \
  && useradd --system --uid 10001 --home /app auth
 WORKDIR /app
-COPY --from=build /src/build/anamnea-auth /app/anamnea-auth
+COPY --from=build /src/build/lumna-auth /app/lumna-auth
 RUN mkdir -p /app/var && chown auth /app/var
 USER auth
 ENV PORTA=8092 BANCO=/app/var/auth.db
 EXPOSE 8092
 HEALTHCHECK --interval=30s --timeout=3s CMD curl -fs http://127.0.0.1:8092/saude || exit 1
-CMD ["/app/anamnea-auth"]
+CMD ["/app/lumna-auth"]

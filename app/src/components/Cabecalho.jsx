@@ -10,7 +10,7 @@ export default function Cabecalho() {
       <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-3 px-4 py-3 md:px-6">
         <Link to="/" className="mr-auto flex items-center gap-2 font-display text-lg font-extrabold">
           <span className="grid size-8 place-items-center rounded-lg bg-azul text-white">A</span>
-          Anamnea
+          Lumna
         </Link>
         {usuario ? (
           <>

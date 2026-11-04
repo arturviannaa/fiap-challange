@@ -106,7 +106,7 @@ CASO(senha_exige_tamanho_letra_e_numero) {
     CONFERIR(validacao::erro_na_senha("curta1"));
     CONFERIR(validacao::erro_na_senha("somenteletras"));
     CONFERIR(validacao::erro_na_senha("12345678"));
-    CONFERIR(!validacao::erro_na_senha("anamnea2026"));
+    CONFERIR(!validacao::erro_na_senha("lumna2026"));
 }
 
 CASO(nome_conta_caracteres_e_nao_bytes) {
@@ -120,63 +120,63 @@ CASO(nome_conta_caracteres_e_nao_bytes) {
 
 CASO(cadastro_e_login_devolvem_sessao_valida) {
     Ambiente amb;
-    auto usuario = amb.contas.cadastrar("Artur", "Artur@Exemplo.com", "anamnea2026");
+    auto usuario = amb.contas.cadastrar("Artur", "Artur@Exemplo.com", "lumna2026");
     CONFERIR(usuario.email == "artur@exemplo.com");
-    auto sessao = amb.contas.entrar("artur@exemplo.com", "anamnea2026");
+    auto sessao = amb.contas.entrar("artur@exemplo.com", "lumna2026");
     auto dono = amb.contas.usuario_da_sessao(sessao.token);
     CONFERIR(dono && dono->id == usuario.id);
 }
 
 CASO(email_repetido_e_recusado) {
     Ambiente amb;
-    amb.contas.cadastrar("Pedro", "pedro@exemplo.com", "anamnea2026");
-    CONFERIR_ERRO(409, amb.contas.cadastrar("Outro", "PEDRO@exemplo.com", "anamnea2026"));
+    amb.contas.cadastrar("Pedro", "pedro@exemplo.com", "lumna2026");
+    CONFERIR_ERRO(409, amb.contas.cadastrar("Outro", "PEDRO@exemplo.com", "lumna2026"));
 }
 
 CASO(senha_errada_e_email_inexistente_dao_a_mesma_resposta) {
     Ambiente amb;
-    amb.contas.cadastrar("Cassiano", "cassiano@exemplo.com", "anamnea2026");
+    amb.contas.cadastrar("Cassiano", "cassiano@exemplo.com", "lumna2026");
     CONFERIR_ERRO(401, amb.contas.entrar("cassiano@exemplo.com", "errada123"));
     CONFERIR_ERRO(401, amb.contas.entrar("ninguem@exemplo.com", "errada123"));
 }
 
 CASO(sessao_expira_e_logout_derruba) {
     Ambiente amb;
-    amb.contas.cadastrar("Artur", "artur@exemplo.com", "anamnea2026");
-    auto sessao = amb.contas.entrar("artur@exemplo.com", "anamnea2026");
+    amb.contas.cadastrar("Artur", "artur@exemplo.com", "lumna2026");
+    auto sessao = amb.contas.entrar("artur@exemplo.com", "lumna2026");
     amb.contas.sair(sessao.token);
     CONFERIR(!amb.contas.usuario_da_sessao(sessao.token));
 
-    auto outra = amb.contas.entrar("artur@exemplo.com", "anamnea2026");
+    auto outra = amb.contas.entrar("artur@exemplo.com", "lumna2026");
     amb.agora += Contas::DURACAO_DA_SESSAO + 1;
     CONFERIR(!amb.contas.usuario_da_sessao(outra.token));
 }
 
 CASO(cinco_erros_bloqueiam_o_login_por_cinco_minutos) {
     Ambiente amb;
-    amb.contas.cadastrar("Pedro", "pedro@exemplo.com", "anamnea2026");
+    amb.contas.cadastrar("Pedro", "pedro@exemplo.com", "lumna2026");
     for (int i = 0; i < Contas::FALHAS_ATE_BLOQUEIO; ++i) {
         CONFERIR_ERRO(401, amb.contas.entrar("pedro@exemplo.com", "errada123"));
     }
     // Bloqueado: nem a senha certa entra.
-    CONFERIR_ERRO(429, amb.contas.entrar("pedro@exemplo.com", "anamnea2026"));
+    CONFERIR_ERRO(429, amb.contas.entrar("pedro@exemplo.com", "lumna2026"));
     amb.agora += Contas::DURACAO_DO_BLOQUEIO;
-    CONFERIR(!amb.contas.entrar("pedro@exemplo.com", "anamnea2026").token.empty());
+    CONFERIR(!amb.contas.entrar("pedro@exemplo.com", "lumna2026").token.empty());
 }
 
 // ---------- recuperacao ----------
 
 CASO(recuperacao_troca_a_senha_e_derruba_sessoes) {
     Ambiente amb;
-    amb.contas.cadastrar("Artur", "artur@exemplo.com", "anamnea2026");
-    auto antiga = amb.contas.entrar("artur@exemplo.com", "anamnea2026");
+    amb.contas.cadastrar("Artur", "artur@exemplo.com", "lumna2026");
+    auto antiga = amb.contas.entrar("artur@exemplo.com", "lumna2026");
 
     auto codigo = amb.recuperacao.solicitar("artur@exemplo.com");
     CONFERIR(codigo && codigo->size() == 6);
     amb.recuperacao.redefinir("artur@exemplo.com", *codigo, "novasenha99");
 
     CONFERIR(!amb.contas.usuario_da_sessao(antiga.token));
-    CONFERIR_ERRO(401, amb.contas.entrar("artur@exemplo.com", "anamnea2026"));
+    CONFERIR_ERRO(401, amb.contas.entrar("artur@exemplo.com", "lumna2026"));
     CONFERIR(!amb.contas.entrar("artur@exemplo.com", "novasenha99").token.empty());
     // O codigo e de uso unico.
     CONFERIR_ERRO(400, amb.recuperacao.redefinir("artur@exemplo.com", *codigo, "outrasenha1"));
@@ -189,7 +189,7 @@ CASO(email_sem_conta_nao_gera_codigo) {
 
 CASO(codigo_expira_em_quinze_minutos) {
     Ambiente amb;
-    amb.contas.cadastrar("Pedro", "pedro@exemplo.com", "anamnea2026");
+    amb.contas.cadastrar("Pedro", "pedro@exemplo.com", "lumna2026");
     auto codigo = amb.recuperacao.solicitar("pedro@exemplo.com");
     amb.agora += Recuperacao::VALIDADE_DO_CODIGO;
     CONFERIR_ERRO(400, amb.recuperacao.redefinir("pedro@exemplo.com", *codigo, "novasenha99"));
@@ -197,7 +197,7 @@ CASO(codigo_expira_em_quinze_minutos) {
 
 CASO(cinco_codigos_errados_invalidam_o_codigo) {
     Ambiente amb;
-    amb.contas.cadastrar("Cassiano", "cassiano@exemplo.com", "anamnea2026");
+    amb.contas.cadastrar("Cassiano", "cassiano@exemplo.com", "lumna2026");
     auto codigo = amb.recuperacao.solicitar("cassiano@exemplo.com");
     std::string errado = (*codigo == "000000") ? "111111" : "000000";
     for (int i = 0; i < Recuperacao::TENTATIVAS_POR_CODIGO; ++i) {
@@ -208,7 +208,7 @@ CASO(cinco_codigos_errados_invalidam_o_codigo) {
 
 CASO(recuperar_a_senha_libera_o_bloqueio_de_login) {
     Ambiente amb;
-    amb.contas.cadastrar("Pedro", "pedro@exemplo.com", "anamnea2026");
+    amb.contas.cadastrar("Pedro", "pedro@exemplo.com", "lumna2026");
     for (int i = 0; i < Contas::FALHAS_ATE_BLOQUEIO; ++i) {
         CONFERIR_ERRO(401, amb.contas.entrar("pedro@exemplo.com", "errada123"));
     }
